@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Continent index{% endblock %}
+
+{% block body %}
+    <h1>Continent index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>IdContinent</th>
+                <th>NomContinent</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for continent in continents %}
+            <tr>
+                <td>{{ continent.idContinent }}</td>
+                <td>{{ continent.nomContinent }}</td>
+                <td>
+                    <a href="{{ path('app_continent_show', {'idContinent': continent.idContinent}) }}">show</a>
+                    <a href="{{ path('app_continent_edit', {'idContinent': continent.idContinent}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_continent_new') }}">Create new</a>
+{% endblock %}

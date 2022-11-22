@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Continent{% endblock %}
+
+{% block body %}
+    <h1>Continent</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>IdContinent</th>
+                <td>{{ continent.idContinent }}</td>
+            </tr>
+            <tr>
+                <th>NomContinent</th>
+                <td>{{ continent.nomContinent }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_continent_index') }}">back to list</a>
+
+    <a href="{{ path('app_continent_edit', {'idContinent': continent.idContinent}) }}">edit</a>
+
+    {{ include('continent/_delete_form.html.twig') }}
+{% endblock %}
