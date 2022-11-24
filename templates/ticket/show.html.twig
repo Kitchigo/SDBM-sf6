@@ -23,7 +23,7 @@
 								</tr>
 								<tr>
 									<th>Date Vente</th>
-									<td>{{ ticket.dateVente ? ticket.dateVente|date('D-M-Y H:i:s') : '' }}</td>
+									<td>{{ ticket.dateVente ? ticket.dateVente|format_datetime('full', 'full', locale='fr') }}</td>
 								</tr>
 							</tbody>
 						</table>
