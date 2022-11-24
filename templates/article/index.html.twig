@@ -1,41 +1,70 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Article index{% endblock %}
+{% block title %}Article index
+{% endblock %}
 
 {% block body %}
-    <h1>Article index</h1>
+	<div class="container-fluid">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>IdArticle</th>
-                <th>NomArticle</th>
-                <th>PrixAchat</th>
-                <th>Volume</th>
-                <th>Titrage</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for article in articles %}
-            <tr>
-                <td>{{ article.idArticle }}</td>
-                <td>{{ article.nomArticle }}</td>
-                <td>{{ article.prixAchat }}</td>
-                <td>{{ article.volume }}</td>
-                <td>{{ article.titrage }}</td>
-                <td>
-                    <a href="{{ path('app_article_show', {'idArticle': article.idArticle}) }}">show</a>
-                    <a href="{{ path('app_article_edit', {'idArticle': article.idArticle}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="6">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+		<div class="justify-content-center">
+			<div class="card bg-dark border rounded-pill border-4 m-4">
+				<div class="card-title text-center text-white">
+					<h1>Liste des Articles</h1>
+				</div>
+				<div class="card-body text-center">
+					<a class="btn btn-primary" href="{{ path('app_article_new') }}">
+						<i class="fa-solid fa-plus"></i>AJOUTER</a>
+				</div>
+			</div>
+		</div>
 
-    <a href="{{ path('app_article_new') }}">Create new</a>
+		<div class="table-responsive">
+			<table class="table table-dark table-hover">
+				<thead>
+					<tr>
+						<th>IdArticle</th>
+						<th>NomArticle</th>
+						<th>PrixAchat</th>
+						<th>Volume</th>
+						<th>Titrage</th>
+						<th>Marque</th>
+						<th>Couleur</th>
+						<th>Type de bière</th>
+						<th>actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for article in articles %}
+						<tr>
+							<td>{{ article.idArticle }}</td>
+							<td>{{ article.nomArticle }}</td>
+							<td>{{ article.prixAchat }}</td>
+							<td>{{ article.volume }}</td>
+							<td>{{ article.titrage }}</td>
+							<td>{{ article.idMarque.nomMarque }}</td>
+							{% if article.idCouleur == null %}
+								<td></td>
+							{% else %}
+								<td>{{ article.idCouleur.nomCouleur }}</td>
+							{% endif %}
+							{% if article.idType == null %}
+								<td></td>
+							{% else %}
+								<td>{{ article.idType.nomType }}</td>
+							{% endif %}
+
+							<td>
+								<a class="btn btn-primary" role="button" href="{{ path('app_article_show', {'idArticle': article.idArticle}) }}"><i class="fa-solid fa-eye"></i></a>
+								<a class="btn btn-info" role="button" href="{{ path('app_article_edit', {'idArticle': article.idArticle}) }}"><i class="fa-solid fa-pencil"></i></a>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td colspan="6">no records found</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
 {% endblock %}

@@ -18,7 +18,8 @@ class ContinentController extends AbstractController
     {
         $continents = $entityManager
             ->getRepository(Continent::class)
-            ->findAll();
+            // ->findAll();
+            ->findBy([], ['nomContinent' => 'asc']);
 
         return $this->render('continent/index.html.twig', [
             'continents' => $continents,

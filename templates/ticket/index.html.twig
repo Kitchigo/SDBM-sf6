@@ -1,37 +1,52 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Ticket index{% endblock %}
+{% block title %}Ticket index
+{% endblock %}
 
 {% block body %}
-    <h1>Ticket index</h1>
+	<div class="container">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Annee</th>
-                <th>NumeroTicket</th>
-                <th>DateVente</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for ticket in tickets %}
-            <tr>
-                <td>{{ ticket.annee }}</td>
-                <td>{{ ticket.numeroTicket }}</td>
-                <td>{{ ticket.dateVente ? ticket.dateVente|date('Y-m-d H:i:s') : '' }}</td>
-                <td>
-                    <a href="{{ path('app_ticket_show', {'annee': ticket.annee}) }}">show</a>
-                    <a href="{{ path('app_ticket_edit', {'annee': ticket.annee}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="4">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+		<div class="justify-content-center">
+			<div class="card bg-dark border rounded-pill border-4 m-4">
+				<div class="card-title text-center text-white">
+					<h1>Liste des Tickets</h1>
+				</div>
+				<div class="card-body text-center">
+					<a class="btn btn-primary" href="{{ path('app_ticket_new') }}">
+						<i class="fa-solid fa-plus"></i>AJOUTER</a>
+				</div>
+			</div>
+		</div>
 
-    <a href="{{ path('app_ticket_new') }}">Create new</a>
+		<div class="table-responsive">
+			<table class="table table-dark table-hover">
+				<thead>
+					<tr>
+						<th>Annee</th>
+						<th>Numero Ticket</th>
+						<th>Date Vente</th>
+						<th>actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for ticket in tickets %}
+						<tr>
+							<td>{{ ticket.annee }}</td>
+							<td>{{ ticket.numeroTicket }}</td>
+							<td>{{ ticket.dateVente ? ticket.dateVente|date('d-m-Y H:i:s') : '' }}</td>
+							<td>
+								<a class="btn btn-primary" role="button" href="{{ path('app_ticket_show', {'annee': ticket.annee}) }}"><i class="fa-solid fa-eye"></i></a>
+								<a class="btn btn-info" role="button" href="{{ path('app_ticket_edit', {'annee': ticket.annee}) }}"><i class="fa-solid fa-pencil"></i></a>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td colspan="4">no records found</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+
+		</div>
+	</div>
 {% endblock %}

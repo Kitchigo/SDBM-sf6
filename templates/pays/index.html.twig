@@ -1,35 +1,51 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Pays index{% endblock %}
+{% block title %}Pays index
+{% endblock %}
 
 {% block body %}
-    <h1>Pays index</h1>
+	<div class="container">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>IdPays</th>
-                <th>NomPays</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for pay in pays %}
-            <tr>
-                <td>{{ pay.idPays }}</td>
-                <td>{{ pay.nomPays }}</td>
-                <td>
-                    <a href="{{ path('app_pays_show', {'idPays': pay.idPays}) }}">show</a>
-                    <a href="{{ path('app_pays_edit', {'idPays': pay.idPays}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="3">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+		<div class="justify-content-center">
+			<div class="card bg-dark border rounded-pill border-4 m-4">
+				<div class="card-title text-center text-white">
+					<h1>Liste des Pays</h1>
+				</div>
+				<div class="card-body text-center">
+					<a class="btn btn-primary" href="{{ path('app_pays_new') }}">
+						<i class="fa-solid fa-plus"></i>AJOUTER</a>
+				</div>
+			</div>
+		</div>
 
-    <a href="{{ path('app_pays_new') }}">Create new</a>
+		<div class="table-responsive">
+			<table class="table table-dark table-hover">
+				<thead>
+					<tr>
+						<th>IdPays</th>
+						<th>NomPays</th>
+						<th>Continent</th>
+						<th>actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for pay in pays %}
+						<tr>
+							<td>{{ pay.idPays }}</td>
+							<td>{{ pay.nomPays }}</td>
+							<td>{{ pay.idContinent.nomContinent }}</td>
+							<td>
+								<a class="btn btn-primary" role="button" href="{{ path('app_pays_show', {'idPays': pay.idPays}) }}"><i class="fa-solid fa-eye"></i></a>
+								<a class="btn btn-info" role="button" href="{{ path('app_pays_edit', {'idPays': pay.idPays}) }}"><i class="fa-solid fa-pencil"></i></a>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td colspan="3">no records found</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
 {% endblock %}

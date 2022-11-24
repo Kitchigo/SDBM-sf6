@@ -62,6 +62,9 @@ class Ticket
     public function __construct()
     {
         $this->idArticle = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->dateVente = new \DateTime();
+        
+        // return $this->dateVente;
     }
 
     public function getAnnee(): ?int
@@ -72,6 +75,17 @@ class Ticket
     public function getNumeroTicket(): ?int
     {
         return $this->numeroTicket;
+    }
+
+    public function setNumeroTicket(int $val): self {
+        $this->numeroTicket = $val;
+        return $this;
+    }
+    
+    public function setAnnee(int $val): self
+    {
+        $this->annee = $val;
+        return $this;
     }
 
     public function getDateVente(): ?\DateTimeInterface
@@ -109,5 +123,4 @@ class Ticket
 
         return $this;
     }
-
 }
