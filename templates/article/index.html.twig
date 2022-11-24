@@ -9,11 +9,11 @@
 		<div class="justify-content-center">
 			<div class="card bg-dark border rounded-pill border-4 m-4">
 				<div class="card-title text-center text-white">
-					<h1>Liste des Articles</h1>
+					<h1>{% trans %}Liste des Articles{% endtrans %}</h1>
 				</div>
 				<div class="card-body text-center">
 					<a class="btn btn-primary" href="{{ path('app_article_new') }}">
-						<i class="fa-solid fa-plus"></i>AJOUTER</a>
+						<i class="fa-solid fa-plus"></i>{% trans %}AJOUTER{% endtrans %}</a>
 				</div>
 			</div>
 		</div>
@@ -22,15 +22,15 @@
 			<table class="table table-dark table-hover">
 				<thead>
 					<tr>
-						<th>Code Article</th>
-						<th>Nom Article</th>
-						<th>Prix Achat</th>
-						<th>Volume</th>
-						<th>Titrage</th>
-						<th>Marque</th>
-						<th>Couleur</th>
-						<th>Type de bière</th>
-						<th>Actions</th>
+						<th>{% trans %}Code Article{% endtrans %}</th> 
+						<th>{% trans %}Nom Article{% endtrans %}</th>
+						<th>{% trans %}Prix Achat{% endtrans %}</th>
+						<th>{% trans %}Volume{% endtrans %}</th>
+						<th>{% trans %}Titrage{% endtrans %}</th>
+						<th>{% trans %}Marque{% endtrans %}</th>
+						<th>{% trans %}Couleur{% endtrans %}</th>
+						<th>{% trans %}Type de bière{% endtrans %}</th>
+						<th>{% trans %}Actions{% endtrans %}</th>
 					</tr>
 				</thead>
 				<tbody>

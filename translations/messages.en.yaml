@@ -1,0 +1,25 @@
+# Navbar 
+Accueil: Home
+Langues: Languages
+Gestion des Articles: Item management
+Gestion des Tickets: Gestion des Tickets
+Gestion des Marques: Brand management
+Gestion des Fabricants: Manufacturer Management
+Gestion des Types de bières: Management of beer types
+Gestion des Couleurs: Color Management
+Gestion des Continents: Continent Management
+Gestion des Pays: Country management
+
+
+# Articles 
+Liste des Articles: List of Items
+Code Article: Item code
+Nom Article: Item name
+Prix Achat: Buying price
+Volume: Volume
+Titrage: Titration
+Marque: Mark
+Couleur: Color
+Type de bière: Type of beer
+Actions: Actions
+AJOUTER: ADD

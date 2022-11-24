@@ -39,7 +39,7 @@ class TicketType extends AbstractType
                 'label' => 'Date de Vente :',
                 'row_attr' => [
                 'class' => 'text-white my-3',
-                'date_format'=> 'd-m-Y H:i:s',
+                // 'disabled' => true,
 
             ],         
         
