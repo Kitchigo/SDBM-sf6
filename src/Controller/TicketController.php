@@ -18,7 +18,9 @@ class TicketController extends AbstractController
     {
         $tickets = $entityManager
             ->getRepository(Ticket::class)
-            ->findAll();
+            // ->findAll();
+            // Trier par date 
+            ->findBy([], ['annee' => 'desc']);
 
         return $this->render('ticket/index.html.twig', [
             'tickets' => $tickets,

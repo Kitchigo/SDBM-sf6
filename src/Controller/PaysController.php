@@ -19,6 +19,7 @@ class PaysController extends AbstractController
         $pays = $entityManager
             ->getRepository(Pays::class)
             // ->findAll();
+            // Trier par odre alphabetique 
             ->findBy([], ['nomPays' => 'asc']);
 
         return $this->render('pays/index.html.twig', [

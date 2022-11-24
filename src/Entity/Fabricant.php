@@ -45,5 +45,9 @@ class Fabricant
         return $this;
     }
 
+    public function __toString()
+    {
+        return $this->nomFabricant;
+    }
 
 }

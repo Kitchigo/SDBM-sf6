@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vendre index
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+
+		<div class="justify-content-center">
+			<div class="card bg-dark border rounded-pill border-4 m-4">
+				<div class="card-title text-center text-white">
+					<h1>Détail du Ticket :
+						{{ annee }}
+						/ N°{{ no }}
+					</h1>
+				</div>
+				<div class="card-body text-center">
+					<a class="btn btn-primary" href="{{ path('app_vendre_new', {'annee': annee, 'no': no} ) }}">
+						<i class="fa-solid fa-plus"></i>AJOUTER</a>
+						<a class="btn btn-warning" role="button" href="{{ path('app_ticket_index') }}">Retour à la liste</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="table-responsive">
+			<table class="table table-dark table-hover">
+				<thead>
+					<tr>
+						<th>Code Article</th>
+						<th>Libellé</th>
+						<th>Volume</th>
+						<th>Quantite</th>
+						<th>Prix de Vente</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for vendre in vendres %}
+						<tr>
+							<td>{{ vendre.idArticle.idArticle }}</td>
+							<td>{{ vendre.idArticle }}</td>
+							<td>{{ vendre.idArticle.volume }}
+								cl</td>
+							<td>{{ vendre.quantite }}</td>
+							<td>{{ vendre.prixVente }}</td>
+							{# <td>{{ vendre.annee }}</td>
+							                <td>{{ vendre.numeroTicket }}</td> #}
+							<td>
+								{# <a href="{{ path('app_vendre_show', {'idArticle': vendre.idArticle}) }}">show</a> #}
+								<a class="btn btn-primary" role="button" href="{{ path('app_vendre_edit', {'annee': annee,'no': no,'id': vendre.idArticle.idArticle}) }}"><i class="fa-solid fa-pencil"></i></a>
+								{{ include('vendre/_delete_form.html.twig') }}
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td colspan="6">no records found</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+{% endblock %}

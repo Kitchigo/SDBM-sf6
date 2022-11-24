@@ -25,7 +25,7 @@
 						<th>Annee</th>
 						<th>Numero Ticket</th>
 						<th>Date Vente</th>
-						<th>actions</th>
+						<th>Actions</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -37,6 +37,7 @@
 							<td>
 								<a class="btn btn-primary" role="button" href="{{ path('app_ticket_show', {'annee': ticket.annee}) }}"><i class="fa-solid fa-eye"></i></a>
 								<a class="btn btn-info" role="button" href="{{ path('app_ticket_edit', {'annee': ticket.annee}) }}"><i class="fa-solid fa-pencil"></i></a>
+								<a class="btn btn-success" role="button" href="{{ path('app_vendre_index', {'annee': ticket.annee, 'no': ticket.numeroTicket} ) }}">Détail</a>
 							</td>
 						</tr>
 					{% else %}

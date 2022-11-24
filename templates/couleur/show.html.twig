@@ -3,24 +3,35 @@
 {% block title %}Couleur{% endblock %}
 
 {% block body %}
-    <h1>Couleur</h1>
+	<div class="container">
+		<div class="row justify-content-center m-5">
 
-    <table class="table">
+			<div class="card bg-dark border rounded-5 border mt-4 col-md-8 justify-center content-center">
+				<div class="card-title text-center text-white">
+					<h1>Couleur</h1>
+					<div class="card-body text-center">
+						<table class="table table-dark table-hover">
         <tbody>
             <tr>
-                <th>IdCouleur</th>
+                <th>Code Couleur</th>
                 <td>{{ couleur.idCouleur }}</td>
             </tr>
             <tr>
-                <th>NomCouleur</th>
+                <th>Nom Couleur</th>
                 <td>{{ couleur.nomCouleur }}</td>
             </tr>
         </tbody>
     </table>
 
-    <a href="{{ path('app_couleur_index') }}">Retour à la liste</a>
+    <a class="btn btn-warning" role="button" href="{{ path('app_couleur_index') }}">Retour à la liste</a>
 
-    <a href="{{ path('app_couleur_edit', {'idCouleur': couleur.idCouleur}) }}">edit</a>
+    <a class="btn btn-info" role="button" href="{{ path('app_couleur_edit', {'idCouleur': couleur.idCouleur}) }}">Modifier</a>
 
     {{ include('couleur/_delete_form.html.twig') }}
+
+    					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}

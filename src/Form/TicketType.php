@@ -19,6 +19,7 @@ class TicketType extends AbstractType
                 'label' => 'Année :',
                 'attr' => [
                     'placeholder' => 'Année',
+                    'readonly' => true,
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
@@ -28,15 +29,18 @@ class TicketType extends AbstractType
                 'label' => 'Numéro Ticket :',
                 'attr' => [
                     'placeholder' => 'Numéro Ticket',
+                    'readonly' => true,
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
                 ],])
             ->add('dateVente',DateTimeType::class, [
                 'required' => true,
-                // 'label' => 'Date de Vente',
+                'label' => 'Date de Vente :',
                 'row_attr' => [
-                'class' => 'text-white my-3'
+                'class' => 'text-white my-3',
+                'date_format'=> 'd-m-Y H:i:s',
+
             ],         
         
             ])

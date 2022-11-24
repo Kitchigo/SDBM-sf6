@@ -22,10 +22,10 @@
 			<table class="table table-dark table-hover">
 				<thead>
 					<tr>
-						<th>IdPays</th>
-						<th>NomPays</th>
+						<th>Code</th>
+						<th>Pays</th>
 						<th>Continent</th>
-						<th>actions</th>
+						<th>Actions</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -33,7 +33,7 @@
 						<tr>
 							<td>{{ pay.idPays }}</td>
 							<td>{{ pay.nomPays }}</td>
-							<td>{{ pay.idContinent.nomContinent }}</td>
+							<td>{{ pay.idContinent.nomContinent|upper}}</td>
 							<td>
 								<a class="btn btn-primary" role="button" href="{{ path('app_pays_show', {'idPays': pay.idPays}) }}"><i class="fa-solid fa-eye"></i></a>
 								<a class="btn btn-info" role="button" href="{{ path('app_pays_edit', {'idPays': pay.idPays}) }}"><i class="fa-solid fa-pencil"></i></a>

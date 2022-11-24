@@ -4,6 +4,8 @@ namespace App\Form;
 
 use App\Entity\Article;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -22,7 +24,7 @@ class ArticleType extends AbstractType
                 'row_attr' => [
                     'class' => 'form-floating mb-3',
                 ],])
-            ->add('prixAchat', TextType::class, [
+            ->add('prixAchat', NumberType::class, [
                 'required' => true,
                 'label' => 'Prix d\'achat :',
                 'attr' => [
@@ -31,7 +33,7 @@ class ArticleType extends AbstractType
                 'row_attr' => [
                     'class' => 'form-floating my-3',
                 ],])
-            ->add('volume', TextType::class, [
+            ->add('volume', IntegerType::class, [
                 'required' => true,
                 'label' => 'Volume :',
                 'attr' => [
@@ -40,7 +42,7 @@ class ArticleType extends AbstractType
                 'row_attr' => [
                     'class' => 'form-floating my-3',
                 ],])
-            ->add('titrage', TextType::class, [
+            ->add('titrage', NumberType::class, [
                 'required' => true,
                 'label' => 'Titrage :',
                 'attr' => [
