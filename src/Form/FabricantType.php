@@ -15,9 +15,9 @@ class FabricantType extends AbstractType
         $builder
             ->add('nomFabricant', TextType::class, [
                 'required' => true,
-                'label' => 'Nom Fabricant :',
+                'label' => 'nom.fabricant',
                 'attr' => [
-                    'placeholder' => 'Nom Fabricant',
+                    'placeholder' => 'nom.fabricant',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',

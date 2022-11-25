@@ -16,9 +16,9 @@ class TicketType extends AbstractType
         $builder
             ->add('annee', IntegerType::class, [
                 'required' => true,
-                'label' => 'Année :',
+                'label' => 'annee.form',
                 'attr' => [
-                    'placeholder' => 'Année',
+                    'placeholder' => 'annee.form',
                     'readonly' => true,
                 ],
                 'row_attr' => [
@@ -26,9 +26,9 @@ class TicketType extends AbstractType
                 ],])
             ->add('numeroTicket', IntegerType::class, [
                 'required' => true,
-                'label' => 'Numéro Ticket :',
+                'label' => 'numero.ticket',
                 'attr' => [
-                    'placeholder' => 'Numéro Ticket',
+                    'placeholder' => 'numero.ticket',
                     'readonly' => true,
                 ],
                 'row_attr' => [
@@ -36,7 +36,7 @@ class TicketType extends AbstractType
                 ],])
             ->add('dateVente',DateTimeType::class, [
                 'required' => true,
-                'label' => 'Date de Vente :',
+                'label' => 'date.vente',
                 'row_attr' => [
                 'class' => 'text-white my-3',
                 // 'disabled' => true,

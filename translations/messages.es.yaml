@@ -1,0 +1,18 @@
+# Form Type
+nom.continent: 'Continente :'
+nom.pays: 'Paga :'
+nom.article: 'Artículo :'
+prix.achat: 'Precio de compra :'
+prix.vente : 'Precio de venta :'
+titrage.form: 'Valoración :'
+volume.form: 'Volumen :'
+nom.marque: 'Cártula :'
+type.biere: 'Tipo de cerveza :'
+nom.couleur: 'Color :'
+annee.form: 'Año :'
+numero.ticket: 'Numero de ticket :'
+date.vente: 'Fecha de venta :'
+quantite.form : 'Monto :'
+nom.fabricant: 'Fabricante :'
+
+

@@ -15,9 +15,9 @@ class MarqueType extends AbstractType
         $builder
             ->add('nomMarque', TextType::class, [
                 'required' => true,
-                'label' => 'Nom Marque :',
+                'label' => 'nom.marque',
                 'attr' => [
-                    'placeholder' => 'Nom Marque',
+                    'placeholder' => 'nom.marque',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
@@ -25,9 +25,9 @@ class MarqueType extends AbstractType
             ])
             ->add('idFabricant', null, [
                 'required' => true,
-                'label' => 'Fabricant :',
+                'label' => 'nom.fabricant',
                 'attr' => [
-                    'placeholder' => 'Fabricant ',
+                    'placeholder' => 'nom.fabricant',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
@@ -35,9 +35,9 @@ class MarqueType extends AbstractType
             ])
             ->add('idPays', null, [
                 'required' => true,
-                'label' => 'Pays :',
+                'label' => 'nom.pays',
                 'attr' => [
-                    'placeholder' => 'Pays ',
+                    'placeholder' => 'nom.pays',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',

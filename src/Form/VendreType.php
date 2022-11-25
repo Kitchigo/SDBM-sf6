@@ -16,9 +16,9 @@ class VendreType extends AbstractType
         $builder
             ->add('annee', IntegerType::class, [
                 'required' => false,
-                'label' => 'Année :',
+                'label' => 'annee.form',
                 'attr' => [
-                    'placeholder' => 'Année',
+                    'placeholder' => 'annee.form',
                     'readonly' =>'true',
                 ],
                 'row_attr' => [
@@ -27,9 +27,9 @@ class VendreType extends AbstractType
             ])
             ->add('numeroTicket', IntegerType::class,[
                 'required' => true,
-                'label' => 'Numéro Ticket :',
+                'label' => 'numero.ticket',
                 'attr' => [
-                    'placeholder' => 'Numéro Ticket',
+                    'placeholder' => 'numero.ticket',
                     'readonly' =>'true',
                 ],
                 'row_attr' => [
@@ -38,9 +38,9 @@ class VendreType extends AbstractType
             ])
             ->add('idArticle', null,[
                 'required' => true,
-                'label' => 'Article :',
+                'label' => 'nom.article',
                 'attr' => [
-                    'placeholder' => 'Article',
+                    'placeholder' => 'nom.article',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating mb-3',
@@ -48,9 +48,9 @@ class VendreType extends AbstractType
             ])
             ->add('prixVente',NumberType::class, [
                 'required' => true,
-                'label' => 'Prix de Vente :',
+                'label' => 'prix.vente',
                 'attr' => [
-                    'placeholder' => 'Prix de Vente',
+                    'placeholder' => 'prix.vente',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating mb-3',
@@ -58,9 +58,9 @@ class VendreType extends AbstractType
             ])
             ->add('quantite',IntegerType::class, [
                 'required' => true,
-                'label' => 'Quantité :',
+                'label' => 'quantite.form',
                 'attr' => [
-                    'placeholder' => 'Quantité',
+                    'placeholder' => 'quantite.form',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating mb-3',

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Couleur index
+{% block title %}{% trans %}Liste des Couleurs{% endtrans %}
 {% endblock %}
 
 {% block body %}
@@ -9,11 +9,11 @@
 		<div class="justify-content-center">
 			<div class="card bg-dark border rounded-pill border-4 m-4">
 				<div class="card-title text-center text-white">
-					<h1>Liste des Couleurs</h1>
+					<h1>{% trans %}Liste des Couleurs{% endtrans %}</h1>
 				</div>
 				<div class="card-body text-center">
 					<a class="btn btn-primary" href="{{ path('app_couleur_new') }}">
-						<i class="fa-solid fa-plus"></i>AJOUTER</a>
+						<i class="fa-solid fa-plus"></i>{% trans %}AJOUTER{% endtrans %}</a>
 				</div>
 			</div>
 		</div>
@@ -23,9 +23,9 @@
 			<table class="table table-dark table-hover">
 				<thead>
 					<tr>
-						<th>Code</th>
-						<th>Couleur</th>
-						<th>Actions</th>
+						<th>{% trans %}Code{% endtrans %}</th>
+						<th>{% trans %}Couleur{% endtrans %}</th>
+						<th>{% trans %}Actions{% endtrans %}</th>
 					</tr>
 				</thead>
 				<tbody>

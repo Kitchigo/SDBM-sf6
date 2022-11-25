@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Vendre index
+{% block title %}{% trans %}Vendre{% endtrans %}
 {% endblock %}
 
 {% block body %}
@@ -9,15 +9,15 @@
 		<div class="justify-content-center">
 			<div class="card bg-dark border rounded-pill border-4 m-4">
 				<div class="card-title text-center text-white">
-					<h1>Détail du Ticket :
+					<h1>{% trans %}Détail du Ticket :{% endtrans %}
 						{{ annee }}
 						/ N°{{ no }}
 					</h1>
 				</div>
 				<div class="card-body text-center">
 					<a class="btn btn-primary" href="{{ path('app_vendre_new', {'annee': annee, 'no': no} ) }}">
-						<i class="fa-solid fa-plus"></i>AJOUTER</a>
-						<a class="btn btn-warning" role="button" href="{{ path('app_ticket_index') }}">Retour à la liste</a>
+						<i class="fa-solid fa-plus"></i>{% trans %}AJOUTER{% endtrans %}</a>
+						<a class="btn btn-warning" role="button" href="{{ path('app_ticket_index') }}">{% trans %}Retour à la liste{% endtrans %}</a>
 				</div>
 			</div>
 		</div>
@@ -26,12 +26,12 @@
 			<table class="table table-dark table-hover">
 				<thead>
 					<tr>
-						<th>Code Article</th>
-						<th>Libellé</th>
-						<th>Volume</th>
-						<th>Quantite</th>
-						<th>Prix de Vente</th>
-						<th>Actions</th>
+						<th>{% trans %}Code Article{% endtrans %}</th>
+						<th>{% trans %}Libellé{% endtrans %}</th>
+						<th>{% trans %}Volume{% endtrans %}</th>
+						<th>{% trans %}Quantite{% endtrans %}</th>
+						<th>{% trans %}Prix de Vente{% endtrans %}</th>
+						<th>{% trans %}Actions{% endtrans %}</th>
 					</tr>
 				</thead>
 				<tbody>

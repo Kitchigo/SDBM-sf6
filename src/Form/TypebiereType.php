@@ -15,9 +15,9 @@ class TypebiereType extends AbstractType
         $builder
             ->add('nomType', TextType::class, [
                 'required' => true,
-                'label' => 'Type de bière :',
+                'label' => 'type.biere',
                 'attr' => [
-                    'placeholder' => 'Type de bière ',
+                    'placeholder' => 'type.biere',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',

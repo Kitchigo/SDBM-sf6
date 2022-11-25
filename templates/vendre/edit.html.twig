@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit Vendre
+{% block title %}{% trans %}Modifier Vendre{% endtrans %}
 {% endblock %}
 
 {% block body %}
@@ -9,14 +9,14 @@
 
 			<div class="card bg-dark border rounded-5 border mt-4 col-md-8 justify-center content-center">
 				<div class="card-title text-center text-white">
-					<h1>Modifier Vendre</h1>
+					<h1>{% trans %}Modifier Vendre{% endtrans %}</h1>
 				</div>
 
 				<div class="card-body text-center">
 
-					{{ include('vendre/_form.html.twig', {'button_label': 'Mettre à jour'}) }}
+					{{ include('vendre/_form.html.twig', {'button_label': 'Mettre à jour'|trans}) }}
 
-					<a class="btn btn-warning mt-3" role="button" href="{{ path('app_vendre_index', {'annee': annee, 'no': no} ) }}">Retour au Ticket</a>
+					<a class="btn btn-warning mt-3" role="button" href="{{ path('app_vendre_index', {'annee': annee, 'no': no} ) }}">{% trans %}Retour au Ticket{% endtrans %}</a>
 
 					{# {{ include('vendre/_delete_form.html.twig') }} #}
 

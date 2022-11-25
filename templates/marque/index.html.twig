@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Marque index
+{% block title %}{% trans %}Liste des Marques{% endtrans %}
 {% endblock %}
 
 {% block body %}
@@ -9,11 +9,11 @@
 		<div class="justify-content-center">
 			<div class="card bg-dark border rounded-pill border-4 m-4">
 				<div class="card-title text-center text-white">
-					<h1>Liste des Marques</h1>
+					<h1>{% trans %}Liste des Marques{% endtrans %}</h1>
 				</div>
 				<div class="card-body text-center">
 					<a class="btn btn-primary" href="{{ path('app_marque_new') }}">
-						<i class="fa-solid fa-plus"></i>AJOUTER</a>
+						<i class="fa-solid fa-plus"></i>{% trans %}AJOUTER{% endtrans %}</a>
 				</div>
 			</div>
 		</div>
@@ -23,9 +23,11 @@
 			<table class="table table-dark table-hover">
 				<thead>
 					<tr>
-						<th>Code</th>
-						<th>Marque</th>
-						<th>Actions</th>
+						<th>{% trans %}Code{% endtrans %}</th>
+						<th>{% trans %}Marque{% endtrans %}</th>
+						<th>{% trans %}Fabricant{% endtrans %}</th>
+						<th>{% trans %}Pays{% endtrans %}</th>
+						<th>{% trans %}Actions{% endtrans %}</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -33,6 +35,12 @@
 						<tr>
 							<td>{{ marque.idMarque }}</td>
 							<td>{{ marque.nomMarque }}</td>
+								{% if marque.idFabricant == null %}
+								<td></td>
+							{% else %}
+								<td>{{ marque.idFabricant.nomFabricant}}</td>
+							{% endif %}
+							<td>{{ marque.idPays.nomPays }}</td>
 							<td>
 								<a class="btn btn-primary" role="button" href="{{ path('app_marque_show', {'idMarque': marque.idMarque}) }}">
 									<i class="fa-solid fa-eye"></i>

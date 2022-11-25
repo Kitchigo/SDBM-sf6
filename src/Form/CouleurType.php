@@ -15,9 +15,9 @@ class CouleurType extends AbstractType
         $builder
             ->add('nomCouleur', TextType::class, [
                 'required' => true,
-                'label' => 'Nom Couleur :',
+                'label' => 'nom.couleur',
                 'attr' => [
-                    'placeholder' => 'Nom Couleur',
+                    'placeholder' => 'nom.couleur',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',

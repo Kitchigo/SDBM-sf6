@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Marque
+{% block title %}{% trans %}Marque{% endtrans %}
 {% endblock %}
 
 {% block body %}
@@ -9,24 +9,24 @@
 
 			<div class="card bg-dark border rounded-5 border mt-4 col-md-8 justify-center content-center">
 				<div class="card-title text-center text-white">
-					<h1>Marque</h1>
+					<h1>{% trans %}Marque{% endtrans %}</h1>
 					<div class="card-body text-center">
 						<table class="table table-dark table-hover">
 							<tbody>
 								<tr>
-									<th>Code Marque</th>
+									<th>{% trans %}Code Marque{% endtrans %}</th>
 									<td>{{ marque.idMarque }}</td>
 								</tr>
 								<tr>
-									<th>Nom Marque</th>
+									<th>{% trans %}Nom Marque{% endtrans %}</th>
 									<td>{{ marque.nomMarque }}</td>
 								</tr>
 							</tbody>
 						</table>
 
-						<a class="btn btn-warning" role="button" href="{{ path('app_marque_index') }}">Retour à la liste</a>
+						<a class="btn btn-warning" role="button" href="{{ path('app_marque_index') }}">{% trans %}Retour à la liste{% endtrans %}</a>
 
-						<a class="btn btn-info" role="button" href="{{ path('app_marque_edit', {'idMarque': marque.idMarque}) }}">Modifier</a>
+						<a class="btn btn-info" role="button" href="{{ path('app_marque_edit', {'idMarque': marque.idMarque}) }}">{% trans %}Modifier{% endtrans %}</a>
 
 						{{ include('marque/_delete_form.html.twig') }}
 

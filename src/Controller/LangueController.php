@@ -24,4 +24,11 @@ class LangueController extends AbstractController
 
         return $this->redirect($request->server->get('HTTP_REFERER'));
     }
+    #[Route('/langue/espagnol', name: 'langue_espagnol')]
+    public function espagnol(Request $request): Response
+    {
+        $request->getSession()->set('_locale', 'es');
+
+        return $this->redirect($request->server->get('HTTP_REFERER'));
+    }
 }

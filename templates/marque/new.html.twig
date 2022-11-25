@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Nouvelle Marque
+{% block title %}{% trans %}Nouvelle Marque{% endtrans %}
 {% endblock %}
 
 {% block body %}
@@ -9,13 +9,13 @@
 
 			<div class="card bg-dark border rounded-5 border mt-4 col-md-8 justify-center content-center">
 				<div class="card-title text-center text-white">
-					<h1>Ajouter nouvelle Marque</h1>
+					<h1>{% trans %}Ajouter nouvelle Marque{% endtrans %}</h1>
 				</div>
 				<div class="card-body text-center">
 
 					{{ include('marque/_form.html.twig') }}
 
-					<a class="btn btn-warning" role="button" href="{{ path('app_marque_index') }}">Retour à la liste</a>
+					<a class="btn btn-warning" role="button" href="{{ path('app_marque_index') }}">{% trans %}Retour à la liste{% endtrans %}</a>
 
 				</div>
 			</div>

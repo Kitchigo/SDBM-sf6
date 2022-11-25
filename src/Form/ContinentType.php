@@ -15,9 +15,9 @@ class ContinentType extends AbstractType
         $builder
             ->add('nomContinent', TextType::class, [
                 'required' => true,
-                'label' => 'Nom du Continent :',
+                'label' => 'nom.continent',
                 'attr' => [
-                    'placeholder' => 'nom du Continent',
+                    'placeholder' => 'nom.continent',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating',

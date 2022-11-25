@@ -16,20 +16,20 @@ class PaysType extends AbstractType
         $builder
             ->add('nomPays', TextType::class, [
                 'required' => true,
-                'label' => 'Nom du Pays :',
+                'label' => 'nom.pays',
                 'attr' => [
-                    'placeholder' => 'nom du Pays',
+                    'placeholder' => 'nom.pays',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating',
                 ],])
             ->add('idContinent', null, [
                 'required' => true,
-                'label' => 'Nom du Continent :',
+                'label' => 'nom.continent',
                 'query_builder' => function(EntityRepository $repository) { 
                     return $repository->createQueryBuilder('nameContinent')->orderBy('nameContinent.nomContinent', 'ASC');},
                 'attr' => [
-                    'placeholder' => 'nom du Continent ',
+                    'placeholder' => 'nom.continent',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',

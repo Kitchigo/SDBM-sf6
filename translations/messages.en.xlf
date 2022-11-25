@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="PTjfiwJ" resname="nom.continent">
+        <source>nom.continent</source>
+        <target>Continent name :</target>
+      </trans-unit>
+      <trans-unit id="1CLRzog" resname="nom.pays">
+        <source>nom.pays</source>
+        <target>Country name :</target>
+      </trans-unit>
+      <trans-unit id="3EUPbk." resname="nom.article">
+        <source>nom.article</source>
+        <target>Article name :</target>
+      </trans-unit>
+      <trans-unit id="zOFumaE" resname="prix.achat">
+        <source>prix.achat</source>
+        <target>Buying price :</target>
+      </trans-unit>
+      <trans-unit id="4igJuI9" resname="prix.vente">
+        <source>prix.vente</source>
+        <target>Selling price :</target>
+      </trans-unit>
+      <trans-unit id="Zgc9ElI" resname="titrage.form">
+        <source>titrage.form</source>
+        <target>Titrage :</target>
+      </trans-unit>
+      <trans-unit id="TYux8Ob" resname="volume.form">
+        <source>volume.form</source>
+        <target>Volume :</target>
+      </trans-unit>
+      <trans-unit id="BsTRjvQ" resname="nom.marque">
+        <source>nom.marque</source>
+        <target>Brand name :</target>
+      </trans-unit>
+      <trans-unit id="lhi5ZHQ" resname="type.biere">
+        <source>type.biere</source>
+        <target>Beer type name :</target>
+      </trans-unit>
+      <trans-unit id="j9n5yxW" resname="nom.couleur">
+        <source>nom.couleur</source>
+        <target>Color name :</target>
+      </trans-unit>
+      <trans-unit id="nv6wuke" resname="annee.form">
+        <source>annee.form</source>
+        <target>Year :</target>
+      </trans-unit>
+      <trans-unit id="8BuQKVM" resname="numero.ticket">
+        <source>numero.ticket</source>
+        <target>Ticket number :</target>
+      </trans-unit>
+      <trans-unit id=".ffturN" resname="date.vente">
+        <source>date.vente</source>
+        <target>Date of sale :</target>
+      </trans-unit>
+      <trans-unit id="xWHZIu2" resname="quantite.form">
+        <source>quantite.form</source>
+        <target>Quantity :</target>
+      </trans-unit>
+      <trans-unit id="zQn_.9_" resname="nom.fabricant">
+        <source>nom.fabricant</source>
+        <target>Maker :</target>
+      </trans-unit>
+      <trans-unit id="sQ_5Ztc" resname="Volume">
+        <source>Volume</source>
+        <target>Volume</target>
+      </trans-unit>
+      <trans-unit id="VBQWthX" resname="Titrage">
+        <source>Titrage</source>
+        <target>Titration</target>
+      </trans-unit>
+      <trans-unit id="_hgRloS" resname="annee.label">
+        <source>annee.label</source>
+        <target>Year :</target>
+      </trans-unit>
+      <trans-unit id="UzFhc1Y" resname="Accueil">
+        <source>Accueil</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="LSWfCb9" resname="Langues">
+        <source>Langues</source>
+        <target>Languages</target>
+      </trans-unit>
+      <trans-unit id="hFoRdkj" resname="Gestion des Articles">
+        <source>Gestion des Articles</source>
+        <target>Item management</target>
+      </trans-unit>
+      <trans-unit id="MvDHdEy" resname="Gestion des Tickets">
+        <source>Gestion des Tickets</source>
+        <target>Tickets Management</target>
+      </trans-unit>
+      <trans-unit id="rpGzucB" resname="Gestion des Marques">
+        <source>Gestion des Marques</source>
+        <target>Brand management</target>
+      </trans-unit>
+      <trans-unit id="svch7_L" resname="Gestion des Fabricants">
+        <source>Gestion des Fabricants</source>
+        <target>Manufacturer Management</target>
+      </trans-unit>
+      <trans-unit id="Vt5oY3." resname="Gestion des Types de bières">
+        <source>Gestion des Types de bières</source>
+        <target>Management of beer types</target>
+      </trans-unit>
+      <trans-unit id="zWEEbW1" resname="Gestion des Couleurs">
+        <source>Gestion des Couleurs</source>
+        <target>Color Management</target>
+      </trans-unit>
+      <trans-unit id="oGKvqFo" resname="Gestion des Continents">
+        <source>Gestion des Continents</source>
+        <target>Continent Management</target>
+      </trans-unit>
+      <trans-unit id="yDLwF5d" resname="Gestion des Pays">
+        <source>Gestion des Pays</source>
+        <target>Country management</target>
+      </trans-unit>
+      <trans-unit id="0hfYaI2" resname="Liste des Articles">
+        <source>Liste des Articles</source>
+        <target>List of Items</target>
+      </trans-unit>
+      <trans-unit id="BBJ_UEQ" resname="Code Article">
+        <source>Code Article</source>
+        <target>Item code</target>
+      </trans-unit>
+      <trans-unit id="qIOz6RE" resname="Nom Article">
+        <source>Nom Article</source>
+        <target>Item name</target>
+      </trans-unit>
+      <trans-unit id="AB4kLUG" resname="Prix Achat">
+        <source>Prix Achat</source>
+        <target>Buying price</target>
+      </trans-unit>
+      <trans-unit id="7ldFVIs" resname="Marque">
+        <source>Marque</source>
+        <target>Mark</target>
+      </trans-unit>
+      <trans-unit id="RVByChh" resname="Couleur">
+        <source>Couleur</source>
+        <target>Color</target>
+      </trans-unit>
+      <trans-unit id="sSL1nAD" resname="Type de bière">
+        <source>Type de bière</source>
+        <target>Type of beer</target>
+      </trans-unit>
+      <trans-unit id=".4BZ3Gd" resname="Actions">
+        <source>Actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="W1t.whl" resname="AJOUTER">
+        <source>AJOUTER</source>
+        <target>ADD</target>
+      </trans-unit>
+      <trans-unit id="ODHaBku" resname="Modifier l'Article">
+        <source>Modifier l'Article</source>
+        <target>Edit Article</target>
+      </trans-unit>
+      <trans-unit id="QLeNDdM" resname="Retour à la liste">
+        <source>Retour à la liste</source>
+        <target>Back to list</target>
+      </trans-unit>
+      <trans-unit id="SpaxebN" resname="Nouveau Article">
+        <source>Nouveau Article</source>
+        <target>New Article</target>
+      </trans-unit>
+      <trans-unit id="x0FMSYf" resname="Ajouter nouveau Article">
+        <source>Ajouter nouveau Article</source>
+        <target>Add new Article</target>
+      </trans-unit>
+      <trans-unit id="Xl0CFs4" resname="Supprimer">
+        <source>Supprimer</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="vHREhpS" resname="Bonjour !">
+        <source>Bonjour !</source>
+        <target>Hello !</target>
+      </trans-unit>
+      <trans-unit id="lOsGTIc" resname="Modification du Continent">
+        <source>Modification du Continent</source>
+        <target>Editing the Continent</target>
+      </trans-unit>
+      <trans-unit id="dSjrn7B" resname="Nouveau Continent">
+        <source>Nouveau Continent</source>
+        <target>New Continent</target>
+      </trans-unit>
+      <trans-unit id="IKXKEFa" resname="Ajouter nouveau Continent">
+        <source>Ajouter nouveau Continent</source>
+        <target>Add new Continent</target>
+      </trans-unit>
+      <trans-unit id="CZtZImO" resname="Continent">
+        <source>Continent</source>
+        <target>Continent</target>
+      </trans-unit>
+      <trans-unit id="Tyylbb1" resname="Code Continent">
+        <source>Code Continent</source>
+        <target>Continent code</target>
+      </trans-unit>
+      <trans-unit id="7rmBJ9D" resname="Nom Continent">
+        <source>Nom Continent</source>
+        <target>Continent name</target>
+      </trans-unit>
+      <trans-unit id="QuN2BLY" resname="Modifier">
+        <source>Modifier</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="yaH2zNP" resname="Modification de la Couleur">
+        <source>Modification de la Couleur</source>
+        <target>Changing the Color</target>
+      </trans-unit>
+      <trans-unit id="4aEn8hD" resname="Nouvelle Couleur">
+        <source>Nouvelle Couleur</source>
+        <target>New Couleur</target>
+      </trans-unit>
+      <trans-unit id="jbySRGf" resname="Ajouter nouvelle Couleur">
+        <source>Ajouter nouvelle Couleur</source>
+        <target>Add new color</target>
+      </trans-unit>
+      <trans-unit id="V50_fsC" resname="Code Couleur">
+        <source>Code Couleur</source>
+        <target>Color code</target>
+      </trans-unit>
+      <trans-unit id="FdW2Iiv" resname="Nom Couleur">
+        <source>Nom Couleur</source>
+        <target>Color name</target>
+      </trans-unit>
+      <trans-unit id="D0GsSrJ" resname="Modification Fabicant">
+        <source>Modification Fabicant</source>
+        <target>Change Manufacturer</target>
+      </trans-unit>
+      <trans-unit id="ySYXRxe" resname="Modification du Fabicant">
+        <source>Modification du Fabicant</source>
+        <target>Changing the Manufacturer</target>
+      </trans-unit>
+      <trans-unit id="eLviBqY" resname="Liste des Fabricants">
+        <source>Liste des Fabricants</source>
+        <target>List of Manufacturers</target>
+      </trans-unit>
+      <trans-unit id="NA9GMDP" resname="Code">
+        <source>Code</source>
+        <target>Code</target>
+      </trans-unit>
+      <trans-unit id="FpBnz2q" resname="Fabricant">
+        <source>Fabricant</source>
+        <target>Maker</target>
+      </trans-unit>
+      <trans-unit id="52DnvUL" resname="Nouveau Fabricant">
+        <source>Nouveau Fabricant</source>
+        <target>New Manufacturer</target>
+      </trans-unit>
+      <trans-unit id="xFtwTNS" resname="Ajouter nouveau Fabricant">
+        <source>Ajouter nouveau Fabricant</source>
+        <target>Add new Manufacturer</target>
+      </trans-unit>
+      <trans-unit id="wO.fzT9" resname="Code Fabricant">
+        <source>Code Fabricant</source>
+        <target>Manufacturer code</target>
+      </trans-unit>
+      <trans-unit id="ljezPBG" resname="Nom Fabricant">
+        <source>Nom Fabricant</source>
+        <target>Manufacturer name</target>
+      </trans-unit>
+      <trans-unit id="_nmzaxH" resname="Modification de la Marque">
+        <source>Modification de la Marque</source>
+        <target>Change of Brand</target>
+      </trans-unit>
+      <trans-unit id="ScfVQue" resname="Liste des Marques">
+        <source>Liste des Marques</source>
+        <target>List of Trademarks</target>
+      </trans-unit>
+      <trans-unit id="4rn3Svc" resname="Nouvelle Marque">
+        <source>Nouvelle Marque</source>
+        <target>New Brand</target>
+      </trans-unit>
+      <trans-unit id="vXZFJd6" resname="Ajouter nouvelle Marque">
+        <source>Ajouter nouvelle Marque</source>
+        <target>Add new Brand</target>
+      </trans-unit>
+      <trans-unit id="bvFu4O9" resname="Code Marque">
+        <source>Code Marque</source>
+        <target>Code Brand</target>
+      </trans-unit>
+      <trans-unit id="61PaA.e" resname="Nom Marque">
+        <source>Nom Marque</source>
+        <target>Brand name</target>
+      </trans-unit>
+      <trans-unit id="IoSEZvK" resname="Modifier Pays">
+        <source>Modifier Pays</source>
+        <target>Edit Country</target>
+      </trans-unit>
+      <trans-unit id="fjDGK8s" resname="Liste des Pays">
+        <source>Liste des Pays</source>
+        <target>List of Countries</target>
+      </trans-unit>
+      <trans-unit id=".nU._5u" resname="Pays">
+        <source>Pays</source>
+        <target>Country</target>
+      </trans-unit>
+      <trans-unit id="pJBLAKn" resname="Nouveau Pays">
+        <source>Nouveau Pays</source>
+        <target>New country</target>
+      </trans-unit>
+      <trans-unit id="yNuo.ci" resname="Ajouter nouveau Pays">
+        <source>Ajouter nouveau Pays</source>
+        <target>Add new New country</target>
+      </trans-unit>
+      <trans-unit id="CSUspum" resname="Code Pays">
+        <source>Code Pays</source>
+        <target>Country code</target>
+      </trans-unit>
+      <trans-unit id="459K3td" resname="Nom Pays">
+        <source>Nom Pays</source>
+        <target>Country name</target>
+      </trans-unit>
+      <trans-unit id="IafhjjJ" resname="Modifier Ticket">
+        <source>Modifier Ticket</source>
+        <target>Edit Ticket</target>
+      </trans-unit>
+      <trans-unit id="8Dnw3av" resname="Liste des Tickets">
+        <source>Liste des Tickets</source>
+        <target>Ticket List</target>
+      </trans-unit>
+      <trans-unit id="s2BIFax" resname="Annee">
+        <source>Annee</source>
+        <target>Year</target>
+      </trans-unit>
+      <trans-unit id="d7bqyNC" resname="Numero Ticket">
+        <source>Numero Ticket</source>
+        <target>Ticket number</target>
+      </trans-unit>
+      <trans-unit id="BBPELui" resname="Date Vente">
+        <source>Date Vente</source>
+        <target>Date of sale</target>
+      </trans-unit>
+      <trans-unit id="MXXfdYY" resname="Détail">
+        <source>Détail</source>
+        <target>Detail</target>
+      </trans-unit>
+      <trans-unit id="_d5e6rb" resname="Nouveau Ticket">
+        <source>Nouveau Ticket</source>
+        <target>New ticket</target>
+      </trans-unit>
+      <trans-unit id="WOI2tW1" resname="Ajouter nouveau Ticket">
+        <source>Ajouter nouveau Ticket</source>
+        <target>Add new ticket</target>
+      </trans-unit>
+      <trans-unit id="VnqLX49" resname="Ticket">
+        <source>Ticket</source>
+        <target>Ticket</target>
+      </trans-unit>
+      <trans-unit id="VhQI.8p" resname="Année">
+        <source>Année</source>
+        <target>Year</target>
+      </trans-unit>
+      <trans-unit id="qwSwqwW" resname="Numéro Ticket">
+        <source>Numéro Ticket</source>
+        <target>Ticket Number</target>
+      </trans-unit>
+      <trans-unit id="wDFmmTD" resname="Modifier Typebiere">
+        <source>Modifier Typebiere</source>
+        <target>Edit Beer Type</target>
+      </trans-unit>
+      <trans-unit id="vxLWkPZ" resname="Modification du Type de bière">
+        <source>Modification du Type de bière</source>
+        <target>Changing the Type of beer</target>
+      </trans-unit>
+      <trans-unit id="1vA03JH" resname="Liste des Types de bière">
+        <source>Liste des Types de bière</source>
+        <target>List of Beer Types</target>
+      </trans-unit>
+      <trans-unit id="McuVaCW" resname="Nouveau Type de bière">
+        <source>Nouveau Type de bière</source>
+        <target>New Type of beer</target>
+      </trans-unit>
+      <trans-unit id="NPYvw99" resname="Ajouter nouveau Type de bière">
+        <source>Ajouter nouveau Type de bière</source>
+        <target>Add new Type of beer</target>
+      </trans-unit>
+      <trans-unit id="zsISXUD" resname="Nom Type de bière">
+        <source>Nom Type de bière</source>
+        <target>Name Type of beer </target>
+      </trans-unit>
+      <trans-unit id="FG3CLmS" resname="Modifier Vendre">
+        <source>Modifier Vendre</source>
+        <target>Edit Sell</target>
+      </trans-unit>
+      <trans-unit id="KiBPnc5" resname="Retour au Ticket">
+        <source>Retour au Ticket</source>
+        <target>Back to ticket</target>
+      </trans-unit>
+      <trans-unit id="oIf9zUp" resname="Vendre">
+        <source>Vendre</source>
+        <target>Sell</target>
+      </trans-unit>
+      <trans-unit id="kq5aapM" resname="Liste des Couleurs">
+        <source>Liste des Couleurs</source>
+        <target>Color List</target>
+      </trans-unit>
+      <trans-unit id="cdx0hz4" resname="Enregistrer">
+        <source>Enregistrer</source>
+        <target>Save</target>
+      </trans-unit>
+      <trans-unit id="9HXoz2v" resname="Mettre à jour">
+        <source>Mettre à jour</source>
+        <target>Update</target>
+      </trans-unit>
+      <trans-unit id="VSavfGb" resname="Modification Fabricant">
+        <source>Modification Fabricant</source>
+        <target>Change Manufacturer</target>
+      </trans-unit>
+      <trans-unit id="MHz9NAG" resname="Modification du Fabricant">
+        <source>Modification du Fabricant</source>
+        <target>Change of Manufacturer</target>
+      </trans-unit>
+      <trans-unit id="cbvQIds" resname="Liste des Continents">
+        <source>Liste des Continents</source>
+        <target>List of Continents</target>
+      </trans-unit>
+      <trans-unit id="4m.kg5P" resname="Détail du Ticket :">
+        <source>Détail du Ticket :</source>
+        <target>Ticket Detail :</target>
+      </trans-unit>
+      <trans-unit id="zVuDKsX" resname="Libellé">
+        <source>Libellé</source>
+        <target>Wording</target>
+      </trans-unit>
+      <trans-unit id="Bs51NI8" resname="Quantite">
+        <source>Quantite</source>
+        <target>Quantity</target>
+      </trans-unit>
+      <trans-unit id="IwpYWKv" resname="Prix de Vente">
+        <source>Prix de Vente</source>
+        <target>Selling price</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

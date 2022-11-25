@@ -17,63 +17,63 @@ class ArticleType extends AbstractType
         $builder
             ->add('nomArticle', TextType::class, [
                 'required' => true,
-                'label' => 'Nom de l\'article :',
+                'label' => 'nom.article',
                 'attr' => [
-                    'placeholder' => 'Nom de l\'article',
+                    'placeholder' => 'nom.article',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating mb-3',
                 ],])
             ->add('prixAchat', NumberType::class, [
                 'required' => true,
-                'label' => 'Prix d\'achat :',
+                'label' => 'prix.achat',
                 'attr' => [
-                    'placeholder' => 'Prix d\'achat',
+                    'placeholder' => 'prix.achat',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
                 ],])
             ->add('volume', IntegerType::class, [
                 'required' => true,
-                'label' => 'Volume :',
+                'label' => 'volume.form',
                 'attr' => [
-                    'placeholder' => 'Volume',
+                    'placeholder' => 'volume.form',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
                 ],])
             ->add('titrage', NumberType::class, [
                 'required' => true,
-                'label' => 'Titrage :',
+                'label' => 'titrage.form',
                 'attr' => [
-                    'placeholder' => 'Titrage',
+                    'placeholder' => 'titrage.form',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
                 ],])
             ->add('idMarque', null, [
                 'required' => false,
-                'label' => 'Nom de la marque :',
+                'label' => 'nom.marque',
                 'attr' => [
-                    'placeholder' => 'Nom de la marque',
+                    'placeholder' => 'nom.marque',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
                 ],])
             ->add('idType', null, [
                 'required' => false,
-                'label' => 'Type de bière :',
+                'label' => 'type.biere',
                 'attr' => [
-                    'placeholder' => 'Type de bière',
+                    'placeholder' => 'type.biere',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
                 ],])
             ->add('idCouleur', null, [
                 'required' => false,
-                'label' => 'Couleur :',
+                'label' => 'nom.couleur',
                 'attr' => [
-                    'placeholder' => 'Couleur',
+                    'placeholder' => 'nom.couleur',
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
