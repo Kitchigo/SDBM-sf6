@@ -19,7 +19,7 @@ class TicketType extends AbstractType
                 'label' => 'annee.form',
                 'attr' => [
                     'placeholder' => 'annee.form',
-                    'readonly' => true,
+                    // 'readonly' => true,
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',
@@ -29,7 +29,7 @@ class TicketType extends AbstractType
                 'label' => 'numero.ticket',
                 'attr' => [
                     'placeholder' => 'numero.ticket',
-                    'readonly' => true,
+                    // 'readonly' => true,
                 ],
                 'row_attr' => [
                     'class' => 'form-floating my-3',

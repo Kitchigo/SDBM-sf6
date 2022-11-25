@@ -31,6 +31,10 @@ class TicketController extends AbstractController
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $ticket = new Ticket();
+        $annee = date("Y");
+
+        
+
         $form = $this->createForm(TicketType::class, $ticket);
         $form->handleRequest($request);
 
