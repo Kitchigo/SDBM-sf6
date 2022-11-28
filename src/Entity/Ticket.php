@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Ticket
  *
  * @ORM\Table(name="ticket")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\TicketRepository")
  */
 class Ticket
 {

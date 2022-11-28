@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-	<div class="container">
+	<div class="container d-flex flex-column min-vh-100">
 
 		<div class="justify-content-center">
 			<div class="card bg-dark border rounded-pill border-4 m-4">
@@ -34,7 +34,7 @@
 							<td>{{ continent.idContinent }}</td>
 							<td>{{ continent.nomContinent }}</td>
 							<td>
-								<a class="btn btn-primary" role="button" href="{{ path('app_continent_show', {'idContinent': continent.idContinent}) }}">
+								<a class="btn btn-primary me-2" role="button" href="{{ path('app_continent_show', {'idContinent': continent.idContinent}) }}">
 									<i class="fa-solid fa-eye"></i>
 								</a>
 								<a class="btn btn-info" role="button" href="{{ path('app_continent_edit', {'idContinent': continent.idContinent}) }}">

@@ -15,4 +15,41 @@ date.vente: 'Date of sale :'
 quantite.form : 'Quantity :'
 nom.fabricant: 'Maker :'
 
+# addflash 
+success: Success
+# couleur.flash: 'The color as been edit !'
+article.new: 'The product was added !'
+article.edit: 'The article has been modified!'
+article.delete: 'The article has been successfully deleted!'
 
+continent.new: 'The continent has been successfully added!'
+continent.edit:  'The continent has been successfully modified!'
+continent.delete: 'The mainland has been successfully deleted!'
+
+couleur.new:  'The color has been added!'
+couleur.edit:  'The color has been changed!'
+couleur.delete: 'The color has been successfully removed!'
+
+fabricant.new:  'The manufacturer has been added!'
+fabricant.edit:  'The manufacturer has been changed!'
+fabricant.delete: 'The manufacturer has been successfully deleted!'
+
+marque.new:  'The brand has been added!'
+marque.edit:  'The brand has been changed!'
+marque.delete: 'The mark has been successfully removed!'
+
+pays.new:  'The Country has been successfully added!'
+pays.edit:  'The Country has been changed!'
+pays.delete: 'The Country has been successfully deleted!'
+
+ticket.new:  'The ticket has been successfully added!'
+ticket.edit:  'The ticket has been modified!'
+ticket.delete: 'The ticket has been successfully deleted!'
+
+type.new:  'The type of beer has been added!' 
+type.edit: 'The type of beer has been changed!'
+type.delete: 'The type of beer has been successfully deleted!'
+
+vendre.new:  'The sell line has been successfully added!'
+vendre.edit:  'The sell line has been modified!'
+vendre.delete: 'The sell line has been deleted!'

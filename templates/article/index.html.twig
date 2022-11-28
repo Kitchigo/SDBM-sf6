@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-	<div class="container-fluid">
+	<div class="container d-flex flex-column min-vh-100">
 
 		<div class="justify-content-center">
 			<div class="card bg-dark border rounded-pill border-4 m-4">
@@ -14,15 +14,17 @@
 				<div class="card-body text-center">
 					<a class="btn btn-primary" href="{{ path('app_article_new') }}">
 						<i class="fa-solid fa-plus"></i>{% trans %}AJOUTER{% endtrans %}</a>
+						<p class="text-white mt-3"> {{ pagination.getTotalItemCount }} {% trans %} Articles {% endtrans %} </p>
 				</div>
 			</div>
+			{{ knp_pagination_render(articles)}}
 		</div>
 
 		<div class="table-responsive">
 			<table class="table table-dark table-hover">
 				<thead>
 					<tr>
-						<th>{% trans %}Code Article{% endtrans %}</th> 
+						<th>{{ knp_pagination_sortable(pagination, 'Code Article'|trans, 'id_article') }}</th> 
 						<th>{% trans %}Nom Article{% endtrans %}</th>
 						<th>{% trans %}Prix Achat{% endtrans %}</th>
 						<th>{% trans %}Volume{% endtrans %}</th>
@@ -54,7 +56,7 @@
 							{% endif %}
 
 							<td>
-								<a class="btn btn-primary" role="button" href="{{ path('app_article_show', {'idArticle': article.idArticle}) }}"><i class="fa-solid fa-eye"></i></a>
+								<a class="btn btn-primary me-2" role="button" href="{{ path('app_article_show', {'idArticle': article.idArticle}) }}"><i class="fa-solid fa-eye"></i></a>
 								<a class="btn btn-info" role="button" href="{{ path('app_article_edit', {'idArticle': article.idArticle}) }}"><i class="fa-solid fa-pencil"></i></a>
 							</td>
 						</tr>

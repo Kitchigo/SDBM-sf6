@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Article;
 use App\Form\ArticleType;
 use Doctrine\ORM\EntityManagerInterface;
+use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -14,14 +15,22 @@ use Symfony\Component\Routing\Annotation\Route;
 class ArticleController extends AbstractController
 {
     #[Route('/', name: 'app_article_index', methods: ['GET'])]
-    public function index(EntityManagerInterface $entityManager): Response
+    public function index(Request $request, EntityManagerInterface $entityManager, PaginatorInterface  $paginator): Response
     {
         $articles = $entityManager
             ->getRepository(Article::class)
             ->findAll();
 
+        // Pagination 
+        $articles = $paginator->paginate(
+            $articles, /* query NOT result */
+            $request->query->getInt('page', 1), /*page number*/
+            100 /*limit per page*/
+        );
+
         return $this->render('article/index.html.twig', [
             'articles' => $articles,
+            'pagination' => $articles,
         ]);
     }
 
@@ -35,6 +44,12 @@ class ArticleController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($article);
             $entityManager->flush();
+
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'article.new',
+            );
 
             return $this->redirectToRoute('app_article_index', [], Response::HTTP_SEE_OTHER);
         }
@@ -62,6 +77,12 @@ class ArticleController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'article.edit',
+            );
+
             return $this->redirectToRoute('app_article_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -74,10 +95,17 @@ class ArticleController extends AbstractController
     #[Route('/{idArticle}', name: 'app_article_delete', methods: ['POST'])]
     public function delete(Request $request, Article $article, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$article->getIdArticle(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $article->getIdArticle(), $request->request->get('_token'))) {
             $entityManager->remove($article);
             $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'article.delete',
+            );
         }
+
+
 
         return $this->redirectToRoute('app_article_index', [], Response::HTTP_SEE_OTHER);
     }

@@ -36,6 +36,12 @@ class CouleurController extends AbstractController
             $entityManager->persist($couleur);
             $entityManager->flush();
 
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'couleur.new',
+            );
+
             return $this->redirectToRoute('app_couleur_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -62,6 +68,12 @@ class CouleurController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'couleur.edit',
+            );
+
             return $this->redirectToRoute('app_couleur_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -74,10 +86,17 @@ class CouleurController extends AbstractController
     #[Route('/{idCouleur}', name: 'app_couleur_delete', methods: ['POST'])]
     public function delete(Request $request, Couleur $couleur, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$couleur->getIdCouleur(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $couleur->getIdCouleur(), $request->request->get('_token'))) {
             $entityManager->remove($couleur);
             $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'couleur.delete',
+            );
         }
+
+
 
         return $this->redirectToRoute('app_couleur_index', [], Response::HTTP_SEE_OTHER);
     }

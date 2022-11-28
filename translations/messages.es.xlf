@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="es" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="PTjfiwJ" resname="nom.continent">
+        <source>nom.continent</source>
+        <target>Continente :</target>
+      </trans-unit>
+      <trans-unit id="1CLRzog" resname="nom.pays">
+        <source>nom.pays</source>
+        <target>Paga :</target>
+      </trans-unit>
+      <trans-unit id="3EUPbk." resname="nom.article">
+        <source>nom.article</source>
+        <target>Artículo :</target>
+      </trans-unit>
+      <trans-unit id="zOFumaE" resname="prix.achat">
+        <source>prix.achat</source>
+        <target>Precio de compra :</target>
+      </trans-unit>
+      <trans-unit id="4igJuI9" resname="prix.vente">
+        <source>prix.vente</source>
+        <target>Precio de venta :</target>
+      </trans-unit>
+      <trans-unit id="Zgc9ElI" resname="titrage.form">
+        <source>titrage.form</source>
+        <target>Valoración :</target>
+      </trans-unit>
+      <trans-unit id="TYux8Ob" resname="volume.form">
+        <source>volume.form</source>
+        <target>Volumen :</target>
+      </trans-unit>
+      <trans-unit id="BsTRjvQ" resname="nom.marque">
+        <source>nom.marque</source>
+        <target>Cártula :</target>
+      </trans-unit>
+      <trans-unit id="lhi5ZHQ" resname="type.biere">
+        <source>type.biere</source>
+        <target>Tipo de cerveza :</target>
+      </trans-unit>
+      <trans-unit id="j9n5yxW" resname="nom.couleur">
+        <source>nom.couleur</source>
+        <target>Color :</target>
+      </trans-unit>
+      <trans-unit id="nv6wuke" resname="annee.form">
+        <source>annee.form</source>
+        <target>Año :</target>
+      </trans-unit>
+      <trans-unit id="8BuQKVM" resname="numero.ticket">
+        <source>numero.ticket</source>
+        <target>Numero de ticket :</target>
+      </trans-unit>
+      <trans-unit id=".ffturN" resname="date.vente">
+        <source>date.vente</source>
+        <target>Fecha de venta :</target>
+      </trans-unit>
+      <trans-unit id="xWHZIu2" resname="quantite.form">
+        <source>quantite.form</source>
+        <target>Monto :</target>
+      </trans-unit>
+      <trans-unit id="zQn_.9_" resname="nom.fabricant">
+        <source>nom.fabricant</source>
+        <target>Fabricante :</target>
+      </trans-unit>
+      <trans-unit id="ruQIhH0" resname="success">
+        <source>success</source>
+        <target>Pegar</target>
+      </trans-unit>
+      <trans-unit id="oJSxGvL" resname="article.new">
+        <source>article.new</source>
+        <target>¡El producto fue agregado!</target>
+      </trans-unit>
+      <trans-unit id="W12cLaV" resname="article.edit">
+        <source>article.edit</source>
+        <target>¡El artículo ha sido modificado!</target>
+      </trans-unit>
+      <trans-unit id="i7QTzVQ" resname="article.delete">
+        <source>article.delete</source>
+        <target>¡El artículo ha sido eliminado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="DG286kH" resname="continent.new">
+        <source>continent.new</source>
+        <target>¡El continente se ha agregado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="0KyFoKy" resname="continent.edit">
+        <source>continent.edit</source>
+        <target>¡El continente ha sido modificado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="I1s99W5" resname="continent.delete">
+        <source>continent.delete</source>
+        <target>¡El continente ha sido eliminado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="FoyG8QH" resname="couleur.new">
+        <source>couleur.new</source>
+        <target>¡Se ha añadido el color!</target>
+      </trans-unit>
+      <trans-unit id="TGYCMhJ" resname="couleur.edit">
+        <source>couleur.edit</source>
+        <target>¡El color ha sido cambiado!</target>
+      </trans-unit>
+      <trans-unit id="SfDQhTG" resname="couleur.delete">
+        <source>couleur.delete</source>
+        <target>¡El color ha sido eliminado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="iRX1yHT" resname="fabricant.new">
+        <source>fabricant.new</source>
+        <target>¡Se ha agregado el fabricante!</target>
+      </trans-unit>
+      <trans-unit id="0HUVJbI" resname="fabricant.edit">
+        <source>fabricant.edit</source>
+        <target>¡El fabricante ha sido cambiado!</target>
+      </trans-unit>
+      <trans-unit id=".kT4Y0o" resname="fabricant.delete">
+        <source>fabricant.delete</source>
+        <target>¡El fabricante ha sido eliminado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="KNrZq7n" resname="marque.new">
+        <source>marque.new</source>
+        <target>¡La marca ha sido añadida!</target>
+      </trans-unit>
+      <trans-unit id="OkuyHfo" resname="marque.edit">
+        <source>marque.edit</source>
+        <target>¡La marca ha sido cambiada!</target>
+      </trans-unit>
+      <trans-unit id="XbLxA3Z" resname="marque.delete">
+        <source>marque.delete</source>
+        <target>¡La marca ha sido eliminada!</target>
+      </trans-unit>
+      <trans-unit id="1MXaE5e" resname="pays.new">
+        <source>pays.new</source>
+        <target>¡El país ha sido agregado exitosamente!</target>
+      </trans-unit>
+      <trans-unit id="Qmd2PMl" resname="pays.edit">
+        <source>pays.edit</source>
+        <target>¡El País ha sido cambiado!</target>
+      </trans-unit>
+      <trans-unit id="tdxfZK." resname="pays.delete">
+        <source>pays.delete</source>
+        <target>¡El país ha sido eliminado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="882nigk" resname="ticket.new">
+        <source>ticket.new</source>
+        <target>¡El ticket ha sido agregado exitosamente!</target>
+      </trans-unit>
+      <trans-unit id="s1aKOK1" resname="ticket.edit">
+        <source>ticket.edit</source>
+        <target>¡El billete ha sido modificado!</target>
+      </trans-unit>
+      <trans-unit id="f5Gi56B" resname="ticket.delete">
+        <source>ticket.delete</source>
+        <target>¡El ticket se ha eliminado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="jf9EfTg" resname="type.new">
+        <source>type.new</source>
+        <target>¡Se ha añadido el tipo de cerveza!</target>
+      </trans-unit>
+      <trans-unit id="KSit8IP" resname="type.edit">
+        <source>type.edit</source>
+        <target>¡Se ha cambiado el tipo de cerveza!</target>
+      </trans-unit>
+      <trans-unit id="av4bjfo" resname="type.delete">
+        <source>type.delete</source>
+        <target>¡El tipo de cerveza se ha eliminado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="w4dXgac" resname="vendre.new">
+        <source>vendre.new</source>
+        <target>¡La línea de venta se ha agregado con éxito!</target>
+      </trans-unit>
+      <trans-unit id="HUDSe1y" resname="vendre.edit">
+        <source>vendre.edit</source>
+        <target>¡La línea de venta ha sido modificada!</target>
+      </trans-unit>
+      <trans-unit id="Z_0whzg" resname="vendre.delete">
+        <source>vendre.delete</source>
+        <target>¡La línea de venta ha sido eliminada!</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

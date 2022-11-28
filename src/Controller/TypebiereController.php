@@ -36,6 +36,13 @@ class TypebiereController extends AbstractController
             $entityManager->persist($typebiere);
             $entityManager->flush();
 
+
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'type.new',
+            );
+
             return $this->redirectToRoute('app_typebiere_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -62,6 +69,13 @@ class TypebiereController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
+
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'type.edit',
+            );
+
             return $this->redirectToRoute('app_typebiere_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -74,9 +88,14 @@ class TypebiereController extends AbstractController
     #[Route('/{idType}', name: 'app_typebiere_delete', methods: ['POST'])]
     public function delete(Request $request, Typebiere $typebiere, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$typebiere->getIdType(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $typebiere->getIdType(), $request->request->get('_token'))) {
             $entityManager->remove($typebiere);
             $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'type.delete',
+            );
         }
 
         return $this->redirectToRoute('app_typebiere_index', [], Response::HTTP_SEE_OTHER);

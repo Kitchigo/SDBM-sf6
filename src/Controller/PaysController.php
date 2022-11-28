@@ -38,6 +38,12 @@ class PaysController extends AbstractController
             $entityManager->persist($pay);
             $entityManager->flush();
 
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'pays.new',
+            );
+
             return $this->redirectToRoute('app_pays_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -64,6 +70,12 @@ class PaysController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'pays.edit',
+            );
+
             return $this->redirectToRoute('app_pays_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -76,9 +88,14 @@ class PaysController extends AbstractController
     #[Route('/{idPays}', name: 'app_pays_delete', methods: ['POST'])]
     public function delete(Request $request, Pays $pay, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$pay->getIdPays(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $pay->getIdPays(), $request->request->get('_token'))) {
             $entityManager->remove($pay);
             $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'pays.delete',
+            );
         }
 
         return $this->redirectToRoute('app_pays_index', [], Response::HTTP_SEE_OTHER);

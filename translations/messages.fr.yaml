@@ -16,3 +16,41 @@ quantite.form : 'Quantité :'
 nom.fabricant: 'Fabricant :'
 
 
+# addflash 
+success: Succès
+# couleur.flash: 'The color as been edit !'
+article.new: 'L''article à bien été ajouté !'
+article.edit: 'L''article à bien été modifié !'
+article.delete: 'L''article à bien été supprimé !'
+
+continent.new: 'Le continent à bien été ajouté !'
+continent.edit:  'Le continent à bien été modifié !'
+continent.delete: 'Le continent à bien été supprimé !'
+
+couleur.new:  'La couleur à bien été ajouté !'
+couleur.edit:  'La couleur à bien été modifié !'
+couleur.delete: 'La couleur à bien été supprimé !'
+
+fabricant.new:  'Le fabricant à bien été ajouté !'
+fabricant.edit:  'Le fabricant à bien été modifié !'
+fabricant.delete: 'Le fabricant à bien été supprimé !'
+
+marque.new:  'La marque à bien été ajouté !'
+marque.edit:  'La marque à bien été modifié !'
+marque.delete: 'La marque à bien été supprimé !'
+
+pays.new:  'Le Pays à bien été ajouté !'
+pays.edit:  'Le Pays à bien été modifié !'
+pays.delete: 'Le Pays à bien été supprimé !'
+
+ticket.new:  'Le ticket à bien été ajouté !'
+ticket.edit:  'Le ticket à bien été modifié !'
+ticket.delete: 'Le ticket à bien été supprimé !'
+
+type.new:  'Le type de bière à bien été ajouté !' 
+type.edit: 'Le type de bière à bien été modifié !'
+type.delete: 'Le type de bière à bien été supprimé !'
+
+vendre.new:  'La ligne vendre à bien été ajouté !'
+vendre.edit:  'La ligne vendre à bien été modifié !'
+vendre.delete: 'La ligne vendre à bien été supprimé !'

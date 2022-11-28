@@ -18,7 +18,7 @@
 
 			{{ encore_entry_link_tags('app') }}
 
-			{# <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}"> #}
+		{# <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}"> #}
 			{# <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}"> #}
 
 		{% endblock %}
@@ -27,18 +27,49 @@
 		{# Fichiers JS #}
 		{% block javascripts %}
 			{{ encore_entry_script_tags('app') }}
+			{{ encore_entry_script_tags('swaldelete') }}
+
+			<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+			<script src="sweetalert2.all.min.js"></script>
+
 
 			{# <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" defer></script> #}
 			{# <script src="{{ asset('assets/js/scripts.js') }}" defer></script> #}
 
 		{% endblock %}
 	</head>
-	
+
 	<body>
 		{% include "_partials/_nav.html.twig" %}
-		{% block body %}{% endblock %}
-	</body>
 
-	{% include "_partials/_footer.html.twig" %}
+		{# Message alert  #}
+		{% for label, messages in app.flashes %}
+			{% for message in messages %}
+				<div class="alert alert-{{ label }} alert-dismissible fade show" role="alert">
+					{% if label == 'success' %}
+						<i class="fa-solid fa-check"></i>
+					{% endif %}
+					<strong>{{ label |trans }}</strong>
+					{{ message |trans }}<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
+
+				{# Mise de la variable twig dans une data  #}
+				<div id="message-extract" class="message-extract" data-message-extract="{{message|trans}}"></div>
+			{% endfor %}
+
+		{% endfor %}
+
+		<script>
+			{# Passage de la variable twig à JS #}
+var message = document.getElementById('message-extract').getAttribute('data-message-extract')
+
+Swal.fire({icon: 'success', title: message, showConfirmButton: false, timer: 1650});
+		</script>
+
+		{% block body %}{% endblock %}
+
+		{% include "_partials/_footer.html.twig" %}
+
+	</body>
 
 </html>

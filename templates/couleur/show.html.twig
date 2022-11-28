@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-	<div class="container">
+	<div class="container d-flex flex-column min-vh-100">
 		<div class="row justify-content-center m-5">
 
 			<div class="card bg-dark border rounded-5 border mt-4 col-md-8 justify-center content-center">
@@ -27,7 +27,7 @@
 
 						<a class="btn btn-warning" role="button" href="{{ path('app_couleur_index') }}">{% trans %}Retour à la liste{% endtrans %}</a>
 
-						<a class="btn btn-info" role="button" href="{{ path('app_couleur_edit', {'idCouleur': couleur.idCouleur}) }}">{% trans %}Modifier{% endtrans %}</a>
+						<a class="btn btn-info m-3" role="button" href="{{ path('app_couleur_edit', {'idCouleur': couleur.idCouleur}) }}">{% trans %}Modifier{% endtrans %}</a>
 
 						{{ include('couleur/_delete_form.html.twig') }}
 

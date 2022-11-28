@@ -1,0 +1,33 @@
+{# templates/bundles/TwigBundle/Exception/error404.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{% trans %}Error{% endtrans %}
+{% endblock %}
+
+{% block body %}
+	<style>
+		h1 {
+			color: red;
+			font-size: 50px;
+		}
+		p {
+			font-size: 30px;
+			color: white;
+		}
+	</style>
+
+	<div class="container d-flex flex-column min-vh-100">
+		<div class="row">
+			<div class="col-12 mt-5">
+				<h1>{% trans %}Une erreur inconnue !{% endtrans %}</h1>
+
+				<p>
+					{% trans %}Verifier votre URL ou bien
+					{% endtrans %}
+					<a href="{{ path('app_main') }}">{% trans %}retour à la page d'accueil{% endtrans %}</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

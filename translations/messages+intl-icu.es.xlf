@@ -361,6 +361,70 @@
         <source>Langues</source>
         <target>Lengua</target>
       </trans-unit>
+      <trans-unit id="Op2T.i1" resname="d/m/Y G:i:s">
+        <source>d/m/Y G:i:s</source>
+        <target>d/m/Y g:i:s A</target>
+      </trans-unit>
+      <trans-unit id="KdlJIlE" resname="Article">
+        <source>Article</source>
+        <target>Artículo</target>
+      </trans-unit>
+      <trans-unit id="VKDowX6" resname="Error">
+        <source>Error</source>
+        <target>Error</target>
+      </trans-unit>
+      <trans-unit id="YOClDoa" resname="Une erreur inconnue !">
+        <source>Une erreur inconnue !</source>
+        <target>Un error desconocido !</target>
+      </trans-unit>
+      <trans-unit id="FVy6hrz" resname="Verifier votre URL ou bien">
+        <source>Verifier votre URL ou bien</source>
+        <target>Verifique su URL o</target>
+      </trans-unit>
+      <trans-unit id="MGJOPso" resname="retour à la page d'accueil">
+        <source>retour à la page d'accueil</source>
+        <target>Volver a la página inicial</target>
+      </trans-unit>
+      <trans-unit id="1jR8CMO" resname="Error403">
+        <source>Error403</source>
+        <target>Error403</target>
+      </trans-unit>
+      <trans-unit id="Nl4VmMi" resname="Accès refusé !">
+        <source>Accès refusé !</source>
+        <target>Acceso denegado !</target>
+      </trans-unit>
+      <trans-unit id="aiLlvtX" resname="Vous n'êtes pas autorisé à accéder à cette page. Verifier votre URL ou bien">
+        <source>Vous n'êtes pas autorisé à accéder à cette page. Verifier votre URL ou bien</source>
+        <target>No tiene permisos para acceder a esta página. Verifique su URL o</target>
+      </trans-unit>
+      <trans-unit id="H5jNIUt" resname="Error404">
+        <source>Error404</source>
+        <target>Error404</target>
+      </trans-unit>
+      <trans-unit id="H1A_wYS" resname="Cette page n'existe pas">
+        <source>Cette page n'existe pas</source>
+        <target>Esta página no existe</target>
+      </trans-unit>
+      <trans-unit id="n8ieDfG" resname="La requête n'a pas pu aboutir. Verifier votre URL ou bien">
+        <source>La requête n'a pas pu aboutir. Verifier votre URL ou bien</source>
+        <target>No se ha podido completar la solicitud. Verifique su URL o</target>
+      </trans-unit>
+      <trans-unit id="Q78hMXR" resname="Bienvenue sur le site de Gestion de la SDBM">
+        <source>Bienvenue sur le site de Gestion de la SDBM</source>
+        <target>Bienvenido al sitio web de la Administración de la SDBM</target>
+      </trans-unit>
+      <trans-unit id="sUrHikb" resname="Articles">
+        <source>Articles</source>
+        <target>Artículos</target>
+      </trans-unit>
+      <trans-unit id="iqcInK2" resname="Marques">
+        <source>Marques</source>
+        <target>Marcas</target>
+      </trans-unit>
+      <trans-unit id="PRMTaLQ" resname="Tickets">
+        <source>Tickets</source>
+        <target>Entradas</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

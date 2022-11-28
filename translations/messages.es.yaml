@@ -16,3 +16,41 @@ quantite.form : 'Monto :'
 nom.fabricant: 'Fabricante :'
 
 
+# addflash 
+success: Pegar
+# couleur.flash: 'The color as been edit !'
+article.new: '¡El producto fue agregado!'
+article.edit: '¡El artículo ha sido modificado!'
+article.delete: '¡El artículo ha sido eliminado con éxito!'
+
+continent.new: '¡El continente se ha agregado con éxito!'
+continent.edit:  '¡El continente ha sido modificado con éxito!'
+continent.delete: '¡El continente ha sido eliminado con éxito!'
+
+couleur.new: '¡Se ha añadido el color!'
+couleur.edit: '¡El color ha sido cambiado!'
+couleur.delete: '¡El color ha sido eliminado con éxito!'
+
+fabricant.new:  '¡Se ha agregado el fabricante!'
+fabricant.edit:  '¡El fabricante ha sido cambiado!'
+fabricant.delete: '¡El fabricante ha sido eliminado con éxito!'
+
+marque.new:  '¡La marca ha sido añadida!'
+marque.edit:  '¡La marca ha sido cambiada!'
+marque.delete: '¡La marca ha sido eliminada!'
+
+pays.new: '¡El país ha sido agregado exitosamente!'
+pays.edit: '¡El País ha sido cambiado!'
+pays.delete: '¡El país ha sido eliminado con éxito!'
+
+ticket.new:  '¡El ticket ha sido agregado exitosamente!'
+ticket.edit:  '¡El billete ha sido modificado!'
+ticket.delete: '¡El ticket se ha eliminado con éxito!'
+
+type.new: '¡Se ha añadido el tipo de cerveza!'
+type.edit: '¡Se ha cambiado el tipo de cerveza!'
+type.delete: '¡El tipo de cerveza se ha eliminado con éxito!'
+
+vendre.new:  '¡La línea de venta se ha agregado con éxito!'
+vendre.edit: '¡La línea de venta ha sido modificada!'
+vendre.delete: '¡La línea de venta ha sido eliminada!'

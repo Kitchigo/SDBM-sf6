@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-	<div class="container">
+	<div class="container d-flex flex-column min-vh-100">
 
 		<div class="justify-content-center">
 			<div class="card bg-dark border rounded-pill border-4 m-4">
@@ -14,8 +14,10 @@
 				<div class="card-body text-center">
 					<a class="btn btn-primary" href="{{ path('app_marque_new') }}">
 						<i class="fa-solid fa-plus"></i>{% trans %}AJOUTER{% endtrans %}</a>
+						<p class="text-white mt-3"> {{ pagination.getTotalItemCount }} {% trans %} Marques {% endtrans %} </p>
 				</div>
 			</div>
+			{{ knp_pagination_render(marques)}}
 		</div>
 
 
@@ -24,7 +26,8 @@
 				<thead>
 					<tr>
 						<th>{% trans %}Code{% endtrans %}</th>
-						<th>{% trans %}Marque{% endtrans %}</th>
+						<th {% if pagination.isSorted('nom_marque') %} class="sorted"{% endif %}>
+						{{ knp_pagination_sortable(pagination, 'Marque'|trans, 'nom_marque') }}</th>
 						<th>{% trans %}Fabricant{% endtrans %}</th>
 						<th>{% trans %}Pays{% endtrans %}</th>
 						<th>{% trans %}Actions{% endtrans %}</th>
@@ -42,7 +45,7 @@
 							{% endif %}
 							<td>{{ marque.idPays.nomPays }}</td>
 							<td>
-								<a class="btn btn-primary" role="button" href="{{ path('app_marque_show', {'idMarque': marque.idMarque}) }}">
+								<a class="btn btn-primary me-2" role="button" href="{{ path('app_marque_show', {'idMarque': marque.idMarque}) }}">
 									<i class="fa-solid fa-eye"></i>
 								</a>
 								<a class="btn btn-info" role="button" href="{{ path('app_marque_edit', {'idMarque': marque.idMarque}) }}">

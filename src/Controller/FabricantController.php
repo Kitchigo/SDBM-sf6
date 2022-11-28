@@ -36,6 +36,12 @@ class FabricantController extends AbstractController
             $entityManager->persist($fabricant);
             $entityManager->flush();
 
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'fabricant.new',
+            );
+
             return $this->redirectToRoute('app_fabricant_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -62,6 +68,12 @@ class FabricantController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'fabricant.edit',
+            );
+
             return $this->redirectToRoute('app_fabricant_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -74,9 +86,14 @@ class FabricantController extends AbstractController
     #[Route('/{idFabricant}', name: 'app_fabricant_delete', methods: ['POST'])]
     public function delete(Request $request, Fabricant $fabricant, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$fabricant->getIdFabricant(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $fabricant->getIdFabricant(), $request->request->get('_token'))) {
             $entityManager->remove($fabricant);
             $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'fabricant.delete',
+            );
         }
 
         return $this->redirectToRoute('app_fabricant_index', [], Response::HTTP_SEE_OTHER);

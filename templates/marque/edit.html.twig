@@ -4,7 +4,7 @@
 {% endblock %}
 
 {% block body %}
-	<div class="container">
+	<div class="container d-flex flex-column min-vh-100">
 		<div class="row justify-content-center m-5">
 
 			<div class="card bg-dark border rounded-5 border mt-4 col-md-8 justify-center content-center">
@@ -16,7 +16,7 @@
 
 					{{ include('marque/_form.html.twig', {'button_label': 'Mettre à jour'|trans}) }}
 
-					<a class="btn btn-warning mt-3" role="button" href="{{ path('app_marque_index') }}">{% trans %}Retour à la liste{% endtrans %}</a>
+					<a class="btn btn-warning m-3" role="button" href="{{ path('app_marque_index') }}">{% trans %}Retour à la liste{% endtrans %}</a>
 
 					{{ include('marque/_delete_form.html.twig') }}
 

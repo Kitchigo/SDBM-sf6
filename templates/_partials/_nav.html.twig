@@ -1,9 +1,13 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="{{ path('app_main')}}">{% trans %}<i class="fa-solid fa-beer-mug-empty"></i> Accueil{% endtrans %}</a>
+		<a class="navbar-brand" href="{{ path('app_main')}}">
+			<i class="fa-solid fa-beer-mug-empty"></i>
+			{% trans %}
+			Accueil{% endtrans %}</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
+
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
@@ -38,32 +42,36 @@
 					<a class="nav-link" href="{{ path('app_pays_index')}}">{% trans %}Gestion des Pays{% endtrans %}
 					</a>
 				</li>
+				<li><hr class="collapse-divider"></li>
+
 			</ul>
-			{# <form class="d-flex" role="search">
-													<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-													<button class="btn btn-outline-success" type="submit">Search</button>
-												</form> #}
+			<div class="collapse navbar-collapse d-xl-flex" id="navbarSupportedContent" >
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item dropdown ">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							{% trans %}Langues{% endtrans %}
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+							<li>
+								<a class="dropdown-item text-white" href="{{ path('langue_francais') }}">
+									<img src="/assets/images/france.png" alt="France" class="w-25 flag-img"/>
+									Français</a>
+							</li>
+							<li>
+								<a class="dropdown-item text-white" href="{{ path('langue_anglais') }}">
+									<img src="/assets/images/united-kingdom.png" alt="U-K" class="w-25 flag-img"/>
+									English</a>
+							</li>
+							<li>
+								<a class="dropdown-item text-white" href="{{ path('langue_espagnol') }}">
+									<img src="/assets/images/spain.png" alt="Espanol" class="w-25 flag-img"/>
+									Espanol</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 
-
-		<div class="btn-group">
-			<button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-				{% trans %}Langues{% endtrans %}
-			</button>
-			<ul class="dropdown-menu dropdown-menu-lg-end">
-				<li>
-					<a class="dropdown-item" href="{{ path('langue_francais') }}">
-						<img src="/assets/images/france.png" alt="France" class="w-25"/> Français</a>
-				</li>
-				<li>
-					<a class="dropdown-item" href="{{ path('langue_anglais') }}">
-						<img src="/assets/images/united-kingdom.png" alt="U-K" class="w-25"/> English</a>
-				</li>
-				<li>
-					<a class="dropdown-item" href="{{ path('langue_espagnol') }}">
-						<img src="/assets/images/spain.png" alt="Espanol" class="w-25"/> Espanol</a>
-				</li>
-			</ul>
-		</div>
 	</div>
 </nav>

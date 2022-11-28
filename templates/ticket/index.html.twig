@@ -1,10 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% trans %}Liste des Tickets{% endtrans %}
+{% block title %}
+	{% trans %}Liste des Tickets{% endtrans %}
 {% endblock %}
 
 {% block body %}
-	<div class="container">
+	<div class="container d-flex flex-column min-vh-100">
 
 		<div class="justify-content-center">
 			<div class="card bg-dark border rounded-pill border-4 m-4">
@@ -13,16 +14,19 @@
 				</div>
 				<div class="card-body text-center">
 					<a class="btn btn-primary" href="{{ path('app_ticket_new') }}">
-						<i class="fa-solid fa-plus"></i>{% trans %}AJOUTER{% endtrans %}</a>
+						<i class="fa-solid fa-plus"></i>
+						{% trans %}AJOUTER{% endtrans %}</a>
+						<p class="text-white mt-3"> {{ pagination.getTotalItemCount }} {% trans %} Tickets {% endtrans %}</p>
 				</div>
 			</div>
-		</div>
 
+		</div>
+		{{ knp_pagination_render(tickets)}} 
 		<div class="table-responsive">
 			<table class="table table-dark table-hover">
 				<thead>
 					<tr>
-						<th>{% trans %}Annee{% endtrans %}</th>
+						<th>{{ knp_pagination_sortable(pagination, 'Annee'|trans, 'annee') }}</th>
 						<th>{% trans %}Numero Ticket{% endtrans %}</th>
 						<th>{% trans %}Date Vente{% endtrans %}</th>
 						<th>{% trans %}Actions{% endtrans %}</th>
@@ -33,10 +37,14 @@
 						<tr>
 							<td>{{ ticket.annee }}</td>
 							<td>{{ ticket.numeroTicket }}</td>
-							<td>{{ ticket.dateVente ? ticket.dateVente|date('d-m-Y H:i:s') : '' }}</td>
+							<td>{{ ticket.dateVente ? ticket.dateVente|date('d/m/Y G:i:s'|trans) }}</td>
 							<td>
-								<a class="btn btn-primary" role="button" href="{{ path('app_ticket_show', {'annee': ticket.annee}) }}"><i class="fa-solid fa-eye"></i></a>
-								<a class="btn btn-info" role="button" href="{{ path('app_ticket_edit', {'annee': ticket.annee}) }}"><i class="fa-solid fa-pencil"></i></a>
+								<a class="btn btn-primary" role="button" href="{{ path('app_ticket_show', {'annee': ticket.annee}) }}">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn-info mx-2" role="button" href="{{ path('app_ticket_edit', {'annee': ticket.annee}) }}">
+									<i class="fa-solid fa-pencil"></i>
+								</a>
 								<a class="btn btn-success" role="button" href="{{ path('app_vendre_index', {'annee': ticket.annee, 'no': ticket.numeroTicket} ) }}">{% trans %}Détail{% endtrans %}</a>
 							</td>
 						</tr>

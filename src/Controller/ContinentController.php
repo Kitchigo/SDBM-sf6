@@ -37,6 +37,12 @@ class ContinentController extends AbstractController
             $entityManager->persist($continent);
             $entityManager->flush();
 
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'continent.new',
+            );
+
             return $this->redirectToRoute('app_continent_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -63,6 +69,12 @@ class ContinentController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->flush();
 
+            // Generation du message d'alert 
+            $this->addFlash(
+                'success',
+                'continent.edit',
+            );
+
             return $this->redirectToRoute('app_continent_index', [], Response::HTTP_SEE_OTHER);
         }
 
@@ -75,9 +87,14 @@ class ContinentController extends AbstractController
     #[Route('/{idContinent}', name: 'app_continent_delete', methods: ['POST'])]
     public function delete(Request $request, Continent $continent, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$continent->getIdContinent(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $continent->getIdContinent(), $request->request->get('_token'))) {
             $entityManager->remove($continent);
             $entityManager->flush();
+
+            $this->addFlash(
+                'success',
+                'continent.delete',
+            );
         }
 
         return $this->redirectToRoute('app_continent_index', [], Response::HTTP_SEE_OTHER);

@@ -1,9 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% trans %}Accueil{% endtrans %}
+{% block title %}
+	{% trans %}Accueil{% endtrans %}
 {% endblock %}
 
 {% block body %}
-	<h1>
-		{% trans %}Accueil{% endtrans %}</h1>
+	<div class="container d-flex flex-column min-vh-100">
+		<div class="row">
+			<div class="col-12 text-center mt-5">
+				<h1>
+					{% trans %}Bienvenue sur le site de Gestion de la SDBM{% endtrans %}</h1>
+			</div>
+		</div>
+	</div>
 {% endblock %}

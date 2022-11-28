@@ -15,7 +15,7 @@
       </trans-unit>
       <trans-unit id="3EUPbk." resname="nom.article">
         <source>nom.article</source>
-        <target>Article name :</target>
+        <target>Item name :</target>
       </trans-unit>
       <trans-unit id="zOFumaE" resname="prix.achat">
         <source>prix.achat</source>
@@ -64,6 +64,122 @@
       <trans-unit id="zQn_.9_" resname="nom.fabricant">
         <source>nom.fabricant</source>
         <target>Maker :</target>
+      </trans-unit>
+      <trans-unit id="ruQIhH0" resname="success">
+        <source>success</source>
+        <target>Success</target>
+      </trans-unit>
+      <trans-unit id="oJSxGvL" resname="article.new">
+        <source>article.new</source>
+        <target>The product was added !</target>
+      </trans-unit>
+      <trans-unit id="W12cLaV" resname="article.edit">
+        <source>article.edit</source>
+        <target>The article has been modified!</target>
+      </trans-unit>
+      <trans-unit id="i7QTzVQ" resname="article.delete">
+        <source>article.delete</source>
+        <target>The article has been successfully deleted!</target>
+      </trans-unit>
+      <trans-unit id="DG286kH" resname="continent.new">
+        <source>continent.new</source>
+        <target>The continent has been successfully added!</target>
+      </trans-unit>
+      <trans-unit id="0KyFoKy" resname="continent.edit">
+        <source>continent.edit</source>
+        <target>The continent has been successfully modified!</target>
+      </trans-unit>
+      <trans-unit id="I1s99W5" resname="continent.delete">
+        <source>continent.delete</source>
+        <target>The mainland has been successfully deleted!</target>
+      </trans-unit>
+      <trans-unit id="FoyG8QH" resname="couleur.new">
+        <source>couleur.new</source>
+        <target>The color has been added!</target>
+      </trans-unit>
+      <trans-unit id="TGYCMhJ" resname="couleur.edit">
+        <source>couleur.edit</source>
+        <target>The color has been changed!</target>
+      </trans-unit>
+      <trans-unit id="SfDQhTG" resname="couleur.delete">
+        <source>couleur.delete</source>
+        <target>The color has been successfully removed!</target>
+      </trans-unit>
+      <trans-unit id="iRX1yHT" resname="fabricant.new">
+        <source>fabricant.new</source>
+        <target>The manufacturer has been added!</target>
+      </trans-unit>
+      <trans-unit id="0HUVJbI" resname="fabricant.edit">
+        <source>fabricant.edit</source>
+        <target>The manufacturer has been changed!</target>
+      </trans-unit>
+      <trans-unit id=".kT4Y0o" resname="fabricant.delete">
+        <source>fabricant.delete</source>
+        <target>The manufacturer has been successfully deleted!</target>
+      </trans-unit>
+      <trans-unit id="KNrZq7n" resname="marque.new">
+        <source>marque.new</source>
+        <target>The brand has been added!</target>
+      </trans-unit>
+      <trans-unit id="OkuyHfo" resname="marque.edit">
+        <source>marque.edit</source>
+        <target>The brand has been changed!</target>
+      </trans-unit>
+      <trans-unit id="XbLxA3Z" resname="marque.delete">
+        <source>marque.delete</source>
+        <target>The mark has been successfully removed!</target>
+      </trans-unit>
+      <trans-unit id="1MXaE5e" resname="pays.new">
+        <source>pays.new</source>
+        <target>The Country has been successfully added!</target>
+      </trans-unit>
+      <trans-unit id="Qmd2PMl" resname="pays.edit">
+        <source>pays.edit</source>
+        <target>The Country has been changed!</target>
+      </trans-unit>
+      <trans-unit id="tdxfZK." resname="pays.delete">
+        <source>pays.delete</source>
+        <target>The Country has been successfully deleted!</target>
+      </trans-unit>
+      <trans-unit id="882nigk" resname="ticket.new">
+        <source>ticket.new</source>
+        <target>The ticket has been successfully added!</target>
+      </trans-unit>
+      <trans-unit id="s1aKOK1" resname="ticket.edit">
+        <source>ticket.edit</source>
+        <target>The ticket has been modified!</target>
+      </trans-unit>
+      <trans-unit id="f5Gi56B" resname="ticket.delete">
+        <source>ticket.delete</source>
+        <target>The ticket has been successfully deleted!</target>
+      </trans-unit>
+      <trans-unit id="jf9EfTg" resname="type.new">
+        <source>type.new</source>
+        <target>The type of beer has been added!</target>
+      </trans-unit>
+      <trans-unit id="KSit8IP" resname="type.edit">
+        <source>type.edit</source>
+        <target>The type of beer has been changed!</target>
+      </trans-unit>
+      <trans-unit id="av4bjfo" resname="type.delete">
+        <source>type.delete</source>
+        <target>The type of beer has been successfully deleted!</target>
+      </trans-unit>
+      <trans-unit id="w4dXgac" resname="vendre.new">
+        <source>vendre.new</source>
+        <target>The sell line has been successfully added!</target>
+      </trans-unit>
+      <trans-unit id="HUDSe1y" resname="vendre.edit">
+        <source>vendre.edit</source>
+        <target>The sell line has been modified!</target>
+      </trans-unit>
+      <trans-unit id="Z_0whzg" resname="vendre.delete">
+        <source>vendre.delete</source>
+        <target>The sell line has been deleted!</target>
+      </trans-unit>
+      <trans-unit id="HpbPxdG" resname="couleur.flash">
+        <source>couleur.flash</source>
+        <target>The color as been edit !</target>
       </trans-unit>
       <trans-unit id="sQ_5Ztc" resname="Volume">
         <source>Volume</source>
@@ -432,6 +548,70 @@
       <trans-unit id="IwpYWKv" resname="Prix de Vente">
         <source>Prix de Vente</source>
         <target>Selling price</target>
+      </trans-unit>
+      <trans-unit id="Op2T.i1" resname="d/m/Y G:i:s">
+        <source>d/m/Y G:i:s</source>
+        <target>m/d/Y g:i:s A</target>
+      </trans-unit>
+      <trans-unit id="KdlJIlE" resname="Article">
+        <source>Article</source>
+        <target>Item</target>
+      </trans-unit>
+      <trans-unit id="VKDowX6" resname="Error">
+        <source>Error</source>
+        <target>Error</target>
+      </trans-unit>
+      <trans-unit id="YOClDoa" resname="Une erreur inconnue !">
+        <source>Une erreur inconnue !</source>
+        <target>An unknown error !</target>
+      </trans-unit>
+      <trans-unit id="FVy6hrz" resname="Verifier votre URL ou bien">
+        <source>Verifier votre URL ou bien</source>
+        <target>Check your URL or</target>
+      </trans-unit>
+      <trans-unit id="MGJOPso" resname="retour à la page d'accueil">
+        <source>retour à la page d'accueil</source>
+        <target>Back to the homepage</target>
+      </trans-unit>
+      <trans-unit id="1jR8CMO" resname="Error403">
+        <source>Error403</source>
+        <target>Error403</target>
+      </trans-unit>
+      <trans-unit id="Nl4VmMi" resname="Accès refusé !">
+        <source>Accès refusé !</source>
+        <target>Access denied !</target>
+      </trans-unit>
+      <trans-unit id="aiLlvtX" resname="Vous n'êtes pas autorisé à accéder à cette page. Verifier votre URL ou bien">
+        <source>Vous n'êtes pas autorisé à accéder à cette page. Verifier votre URL ou bien</source>
+        <target>You are not authorized to access this page. Check your URL or</target>
+      </trans-unit>
+      <trans-unit id="H5jNIUt" resname="Error404">
+        <source>Error404</source>
+        <target>Error404</target>
+      </trans-unit>
+      <trans-unit id="H1A_wYS" resname="Cette page n'existe pas">
+        <source>Cette page n'existe pas</source>
+        <target>This page does not exist</target>
+      </trans-unit>
+      <trans-unit id="n8ieDfG" resname="La requête n'a pas pu aboutir. Verifier votre URL ou bien">
+        <source>La requête n'a pas pu aboutir. Verifier votre URL ou bien</source>
+        <target>The request could not be completed. Check your URL or</target>
+      </trans-unit>
+      <trans-unit id="Q78hMXR" resname="Bienvenue sur le site de Gestion de la SDBM">
+        <source>Bienvenue sur le site de Gestion de la SDBM</source>
+        <target>Welcome to the SDBM Management website</target>
+      </trans-unit>
+      <trans-unit id="sUrHikb" resname="Articles">
+        <source>Articles</source>
+        <target>Items</target>
+      </trans-unit>
+      <trans-unit id="iqcInK2" resname="Marques">
+        <source>Marques</source>
+        <target>Brand</target>
+      </trans-unit>
+      <trans-unit id="PRMTaLQ" resname="Tickets">
+        <source>Tickets</source>
+        <target>Tickets</target>
       </trans-unit>
     </body>
   </file>
