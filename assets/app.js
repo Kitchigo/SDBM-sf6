@@ -12,15 +12,19 @@ import './styles/app.scss';
 // import '../styles/styles.scss'
 
 // Import all of Bootstrap's JS
-import * as bootstrap from 'bootstrap'
+import * as bootstrap from 'bootstrap';
 
 // start the Stimulus application
-import './bootstrap';
+// import './bootstrap';
 
 // Import JQuery 
 const $ = require('jquery');
 
-// ES6 Modules or TypeScript
-import Swal from 'sweetalert2'
+// create global $ and jQuery variables
+global.$ = global.jQuery = $;
+
+// // ES6 Modules or TypeScript
+import Swal from 'sweetalert2';
+window.Swal = Swal;
 
 

@@ -613,6 +613,26 @@
         <source>Tickets</source>
         <target>Tickets</target>
       </trans-unit>
+      <trans-unit id="Hq1l12K" resname="'Etes vous sur ??'">
+        <source>'Etes vous sur ??'</source>
+        <target>'Are you sure ??'</target>
+      </trans-unit>
+      <trans-unit id="LhduRJv" resname="'Vous ne pourrez pas faire marche arriere !'">
+        <source>'Vous ne pourrez pas faire marche arriere !'</source>
+        <target>'You won\'t be able to revert this !'</target>
+      </trans-unit>
+      <trans-unit id="KPp4YeO" resname="'Oui, supprimer !'">
+        <source>'Oui, supprimer !'</source>
+        <target>'Yes, delete !'</target>
+      </trans-unit>
+      <trans-unit id="0U3vT_l" resname="'Non, annuler !'">
+        <source>'Non, annuler !'</source>
+        <target>'No, cancel !'</target>
+      </trans-unit>
+      <trans-unit id="JTo.TcP" resname="Aucun enregistrement trouvé">
+        <source>Aucun enregistrement trouvé</source>
+        <target>No records found</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

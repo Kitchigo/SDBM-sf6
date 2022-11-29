@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}{% trans %}Liste des Continents{% endtrans %}
+{% block title %}
+	{% trans %}Liste des Continents{% endtrans %}
 {% endblock %}
 
 {% block body %}
@@ -13,7 +14,8 @@
 				</div>
 				<div class="card-body text-center">
 					<a class="btn btn-primary" href="{{ path('app_continent_new') }}">
-						<i class="fa-solid fa-plus"></i>{% trans %}AJOUTER{% endtrans %}</a>
+						<i class="fa-solid fa-plus"></i>
+						{% trans %}AJOUTER{% endtrans %}</a>
 				</div>
 			</div>
 		</div>
@@ -44,7 +46,7 @@
 						</tr>
 					{% else %}
 						<tr>
-							<td colspan="3">no records found</td>
+							<td colspan="3">{% trans %}Aucun enregistrement trouvé{% endtrans %}</td>
 						</tr>
 					{% endfor %}
 

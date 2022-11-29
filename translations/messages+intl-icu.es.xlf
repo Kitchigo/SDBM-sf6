@@ -425,6 +425,26 @@
         <source>Tickets</source>
         <target>Entradas</target>
       </trans-unit>
+      <trans-unit id="Hq1l12K" resname="'Etes vous sur ??'">
+        <source>'Etes vous sur ??'</source>
+        <target>'Está usted seguro ??'</target>
+      </trans-unit>
+      <trans-unit id="LhduRJv" resname="'Vous ne pourrez pas faire marche arriere !'">
+        <source>'Vous ne pourrez pas faire marche arriere !'</source>
+        <target>'No puedes volver !'</target>
+      </trans-unit>
+      <trans-unit id="KPp4YeO" resname="'Oui, supprimer !'">
+        <source>'Oui, supprimer !'</source>
+        <target>'Si, borrar !'</target>
+      </trans-unit>
+      <trans-unit id="0U3vT_l" resname="'Non, annuler !'">
+        <source>'Non, annuler !'</source>
+        <target>'No, cancela !'</target>
+      </trans-unit>
+      <trans-unit id="JTo.TcP" resname="Aucun enregistrement trouvé">
+        <source>Aucun enregistrement trouvé</source>
+        <target>No se encontraron registros</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

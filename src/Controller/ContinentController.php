@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Continent;
 use App\Form\ContinentType;
+use App\Form\SearchType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -14,8 +15,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class ContinentController extends AbstractController
 {
     #[Route('/', name: 'app_continent_index', methods: ['GET'])]
-    public function index(EntityManagerInterface $entityManager): Response
+    public function index(EntityManagerInterface $entityManager, Request $request): Response
     {
+        
         $continents = $entityManager
             ->getRepository(Continent::class)
             // ->findAll();
@@ -23,6 +25,7 @@ class ContinentController extends AbstractController
 
         return $this->render('continent/index.html.twig', [
             'continents' => $continents,
+           
         ]);
     }
 

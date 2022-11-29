@@ -1,6 +1,40 @@
 <form method="post" 
-action="{{ path('app_vendre_delete', {'annee': annee,'no': no,'id': vendre.idArticle.idArticle}) }}" 
+action="{{ path('app_vendre_delete', {'annee': annee,'no': no,'id': vendre.idArticle.idArticle}) }}"
 >
     <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ vendre.idArticle) }}">
     <button class="btn btn-danger" id="submitForm"><i class="fa-regular fa-trash-can"></i></button>
 </form>
+
+
+
+{# SweetAlert Supprimer  #}
+<script> 
+
+    $('#submitForm').on('click', function (e) {
+    e.preventDefault();
+    var form = $(this).parents('form');
+
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+            confirmButton: 'btn btn-success',
+            cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+    })
+    swalWithBootstrapButtons.fire({
+        title: {% trans %}'Etes vous sur ??'{% endtrans %},
+        text: {% trans %}'Vous ne pourrez pas faire marche arriere !'{% endtrans %},
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: {% trans %}'Oui, supprimer !'{% endtrans %},
+        cancelButtonText: {% trans %}'Non, annuler !'{% endtrans %},
+        reverseButtons: true
+    }).then((result) => {
+        if (result.value) {
+
+            form.submit();
+        }
+    });
+});
+
+</script>
