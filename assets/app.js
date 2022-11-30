@@ -22,7 +22,7 @@ const $ = require('jquery');
 
 // create global $ and jQuery variables
 global.$ = global.jQuery = $;
-
+ 
 // // ES6 Modules or TypeScript
 import Swal from 'sweetalert2';
 window.Swal = Swal;
